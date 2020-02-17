@@ -16,7 +16,7 @@ namespace Negocio.IRRF
             SQL = new StringBuilder();
             SQL.Append("SELECT Id, Competencia, Limite, Porcentagem, Desconto ");
             SQL.Append("FROM Irrf ");
-            SQL.Append("WHERE Competencia = @Competencia ");
+            SQL.Append("WHERE Competencia >= @Competencia ");
             SQL.Append("ORDER BY Competencia DESC");
 
             try

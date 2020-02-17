@@ -28,22 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabControle = new System.Windows.Forms.TabControl();
             this.TbPgSalMin = new System.Windows.Forms.TabPage();
             this.PnlSalMin = new System.Windows.Forms.Panel();
             this.DgvSalMin = new System.Windows.Forms.DataGridView();
+            this.IdSalMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CompSalMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SalarioSalMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnExcluirSalMin = new System.Windows.Forms.Button();
             this.BtnAlterarSalMin = new System.Windows.Forms.Button();
             this.BtnGravarSalMin = new System.Windows.Forms.Button();
@@ -71,6 +74,11 @@
             this.BtnAlterarIrrf = new System.Windows.Forms.Button();
             this.BtnGravarIrrf = new System.Windows.Forms.Button();
             this.DgvIrrf = new System.Windows.Forms.DataGridView();
+            this.IdIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CompIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LimiteIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PorcIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.TxtDescIrrf = new System.Windows.Forms.TextBox();
@@ -81,6 +89,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.TbPgDep = new System.Windows.Forms.TabPage();
             this.DgvDep = new System.Windows.Forms.DataGridView();
+            this.IdDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CompDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnExcluirDep = new System.Windows.Forms.Button();
             this.BtnAlterarDep = new System.Windows.Forms.Button();
             this.BtnGravarDep = new System.Windows.Forms.Button();
@@ -89,22 +100,12 @@
             this.MktCompDep = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.PnlDep = new System.Windows.Forms.Panel();
-            this.IdIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CompIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LimiteIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PorcIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CompInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TetoFaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PorcInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdSalMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CompSalMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SalarioSalMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CompDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ParcDeduInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TabControle.SuspendLayout();
             this.TbPgSalMin.SuspendLayout();
             this.PnlSalMin.SuspendLayout();
@@ -181,6 +182,39 @@
             this.DgvSalMin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvSalMin.Size = new System.Drawing.Size(502, 254);
             this.DgvSalMin.TabIndex = 23;
+            // 
+            // IdSalMin
+            // 
+            this.IdSalMin.DataPropertyName = "Id";
+            this.IdSalMin.HeaderText = "Id";
+            this.IdSalMin.Name = "IdSalMin";
+            this.IdSalMin.ReadOnly = true;
+            this.IdSalMin.Visible = false;
+            // 
+            // CompSalMin
+            // 
+            this.CompSalMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.CompSalMin.DataPropertyName = "Competencia";
+            dataGridViewCellStyle1.Format = "MM/yyyy";
+            dataGridViewCellStyle1.NullValue = null;
+            this.CompSalMin.DefaultCellStyle = dataGridViewCellStyle1;
+            this.CompSalMin.HeaderText = "Competência";
+            this.CompSalMin.Name = "CompSalMin";
+            this.CompSalMin.ReadOnly = true;
+            this.CompSalMin.Visible = false;
+            // 
+            // SalarioSalMin
+            // 
+            this.SalarioSalMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.SalarioSalMin.DataPropertyName = "Salario";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "N2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.SalarioSalMin.DefaultCellStyle = dataGridViewCellStyle2;
+            this.SalarioSalMin.HeaderText = "Salário";
+            this.SalarioSalMin.Name = "SalarioSalMin";
+            this.SalarioSalMin.ReadOnly = true;
+            this.SalarioSalMin.Width = 114;
             // 
             // BtnExcluirSalMin
             // 
@@ -360,7 +394,8 @@
             this.CompInss,
             this.FaixaInss,
             this.TetoFaixaInss,
-            this.PorcInss});
+            this.PorcInss,
+            this.ParcDeduInss});
             this.DgvInss.Location = new System.Drawing.Point(7, 163);
             this.DgvInss.Margin = new System.Windows.Forms.Padding(2);
             this.DgvInss.MultiSelect = false;
@@ -559,6 +594,61 @@
             this.DgvIrrf.Size = new System.Drawing.Size(495, 243);
             this.DgvIrrf.TabIndex = 16;
             // 
+            // IdIrrf
+            // 
+            this.IdIrrf.DataPropertyName = "Id";
+            this.IdIrrf.HeaderText = "Id";
+            this.IdIrrf.Name = "IdIrrf";
+            this.IdIrrf.ReadOnly = true;
+            this.IdIrrf.Visible = false;
+            // 
+            // CompIrrf
+            // 
+            this.CompIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.CompIrrf.DataPropertyName = "Competencia";
+            dataGridViewCellStyle7.Format = "MM/yyyy";
+            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle7;
+            this.CompIrrf.HeaderText = "Competência";
+            this.CompIrrf.Name = "CompIrrf";
+            this.CompIrrf.ReadOnly = true;
+            this.CompIrrf.Visible = false;
+            // 
+            // LimiteIrrf
+            // 
+            this.LimiteIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.LimiteIrrf.DataPropertyName = "Limite";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Format = "N2";
+            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle8;
+            this.LimiteIrrf.HeaderText = "Limite";
+            this.LimiteIrrf.Name = "LimiteIrrf";
+            this.LimiteIrrf.ReadOnly = true;
+            this.LimiteIrrf.Width = 103;
+            // 
+            // PorcIrrf
+            // 
+            this.PorcIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.PorcIrrf.DataPropertyName = "Porcentagem";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.Format = "N2";
+            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle9;
+            this.PorcIrrf.HeaderText = "%";
+            this.PorcIrrf.Name = "PorcIrrf";
+            this.PorcIrrf.ReadOnly = true;
+            this.PorcIrrf.Width = 60;
+            // 
+            // DescIrrf
+            // 
+            this.DescIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.DescIrrf.DataPropertyName = "Desconto";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle10.Format = "N2";
+            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle10;
+            this.DescIrrf.HeaderText = "Desconto";
+            this.DescIrrf.Name = "DescIrrf";
+            this.DescIrrf.ReadOnly = true;
+            this.DescIrrf.Width = 140;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -688,6 +778,36 @@
             this.DgvDep.Size = new System.Drawing.Size(502, 254);
             this.DgvDep.TabIndex = 23;
             // 
+            // IdDep
+            // 
+            this.IdDep.DataPropertyName = "Id";
+            this.IdDep.HeaderText = "Id";
+            this.IdDep.Name = "IdDep";
+            this.IdDep.ReadOnly = true;
+            this.IdDep.Visible = false;
+            // 
+            // CompDep
+            // 
+            this.CompDep.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.CompDep.DataPropertyName = "Competencia";
+            dataGridViewCellStyle11.Format = "MM/yyyy";
+            this.CompDep.DefaultCellStyle = dataGridViewCellStyle11;
+            this.CompDep.HeaderText = "Competência";
+            this.CompDep.Name = "CompDep";
+            this.CompDep.ReadOnly = true;
+            this.CompDep.Visible = false;
+            // 
+            // ValorDep
+            // 
+            this.ValorDep.DataPropertyName = "Valor";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle12.Format = "N2";
+            this.ValorDep.DefaultCellStyle = dataGridViewCellStyle12;
+            this.ValorDep.HeaderText = "Valor";
+            this.ValorDep.Name = "ValorDep";
+            this.ValorDep.ReadOnly = true;
+            this.ValorDep.Width = 94;
+            // 
             // BtnExcluirDep
             // 
             this.BtnExcluirDep.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
@@ -785,62 +905,6 @@
             this.PnlDep.Size = new System.Drawing.Size(513, 408);
             this.PnlDep.TabIndex = 24;
             // 
-            // IdIrrf
-            // 
-            this.IdIrrf.DataPropertyName = "Id";
-            this.IdIrrf.HeaderText = "Id";
-            this.IdIrrf.Name = "IdIrrf";
-            this.IdIrrf.ReadOnly = true;
-            this.IdIrrf.Visible = false;
-            // 
-            // CompIrrf
-            // 
-            this.CompIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.CompIrrf.DataPropertyName = "Competencia";
-            dataGridViewCellStyle7.Format = "MM/yyyy";
-            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle7;
-            this.CompIrrf.HeaderText = "Competência";
-            this.CompIrrf.Name = "CompIrrf";
-            this.CompIrrf.ReadOnly = true;
-            this.CompIrrf.Visible = false;
-            this.CompIrrf.Width = 181;
-            // 
-            // LimiteIrrf
-            // 
-            this.LimiteIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.LimiteIrrf.DataPropertyName = "Limite";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Format = "N2";
-            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle8;
-            this.LimiteIrrf.HeaderText = "Limite";
-            this.LimiteIrrf.Name = "LimiteIrrf";
-            this.LimiteIrrf.ReadOnly = true;
-            this.LimiteIrrf.Width = 103;
-            // 
-            // PorcIrrf
-            // 
-            this.PorcIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.PorcIrrf.DataPropertyName = "Porcentagem";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle9.Format = "N2";
-            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle9;
-            this.PorcIrrf.HeaderText = "%";
-            this.PorcIrrf.Name = "PorcIrrf";
-            this.PorcIrrf.ReadOnly = true;
-            this.PorcIrrf.Width = 60;
-            // 
-            // DescIrrf
-            // 
-            this.DescIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.DescIrrf.DataPropertyName = "Desconto";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.Format = "N2";
-            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle10;
-            this.DescIrrf.HeaderText = "Desconto";
-            this.DescIrrf.Name = "DescIrrf";
-            this.DescIrrf.ReadOnly = true;
-            this.DescIrrf.Width = 140;
-            // 
             // IdInss
             // 
             this.IdInss.DataPropertyName = "Id";
@@ -897,70 +961,14 @@
             this.PorcInss.ReadOnly = true;
             this.PorcInss.Width = 60;
             // 
-            // IdSalMin
+            // ParcDeduInss
             // 
-            this.IdSalMin.DataPropertyName = "Id";
-            this.IdSalMin.HeaderText = "Id";
-            this.IdSalMin.Name = "IdSalMin";
-            this.IdSalMin.ReadOnly = true;
-            this.IdSalMin.Visible = false;
-            // 
-            // CompSalMin
-            // 
-            this.CompSalMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.CompSalMin.DataPropertyName = "Competencia";
-            dataGridViewCellStyle1.Format = "MM/yyyy";
-            dataGridViewCellStyle1.NullValue = null;
-            this.CompSalMin.DefaultCellStyle = dataGridViewCellStyle1;
-            this.CompSalMin.HeaderText = "Competência";
-            this.CompSalMin.Name = "CompSalMin";
-            this.CompSalMin.ReadOnly = true;
-            this.CompSalMin.Visible = false;
-            this.CompSalMin.Width = 181;
-            // 
-            // SalarioSalMin
-            // 
-            this.SalarioSalMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.SalarioSalMin.DataPropertyName = "Salario";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.SalarioSalMin.DefaultCellStyle = dataGridViewCellStyle2;
-            this.SalarioSalMin.HeaderText = "Salário";
-            this.SalarioSalMin.Name = "SalarioSalMin";
-            this.SalarioSalMin.ReadOnly = true;
-            this.SalarioSalMin.Width = 114;
-            // 
-            // IdDep
-            // 
-            this.IdDep.DataPropertyName = "Id";
-            this.IdDep.HeaderText = "Id";
-            this.IdDep.Name = "IdDep";
-            this.IdDep.ReadOnly = true;
-            this.IdDep.Visible = false;
-            // 
-            // CompDep
-            // 
-            this.CompDep.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.CompDep.DataPropertyName = "Competencia";
-            dataGridViewCellStyle11.Format = "MM/yyyy";
-            this.CompDep.DefaultCellStyle = dataGridViewCellStyle11;
-            this.CompDep.HeaderText = "Competência";
-            this.CompDep.Name = "CompDep";
-            this.CompDep.ReadOnly = true;
-            this.CompDep.Visible = false;
-            this.CompDep.Width = 181;
-            // 
-            // ValorDep
-            // 
-            this.ValorDep.DataPropertyName = "Valor";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle12.Format = "N2";
-            this.ValorDep.DefaultCellStyle = dataGridViewCellStyle12;
-            this.ValorDep.HeaderText = "Valor";
-            this.ValorDep.Name = "ValorDep";
-            this.ValorDep.ReadOnly = true;
-            this.ValorDep.Width = 94;
+            this.ParcDeduInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ParcDeduInss.DataPropertyName = "Parcela_Deduzir";
+            this.ParcDeduInss.HeaderText = "Parcela_Deduzir";
+            this.ParcDeduInss.Name = "ParcDeduInss";
+            this.ParcDeduInss.ReadOnly = true;
+            this.ParcDeduInss.Width = 216;
             // 
             // FrmCadTabela
             // 
@@ -1054,11 +1062,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IdSalMin;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompSalMin;
         private System.Windows.Forms.DataGridViewTextBoxColumn SalarioSalMin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdInss;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CompInss;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FaixaInss;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TetoFaixaInss;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PorcInss;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdIrrf;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompIrrf;
         private System.Windows.Forms.DataGridViewTextBoxColumn LimiteIrrf;
@@ -1067,5 +1070,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IdDep;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompDep;
         private System.Windows.Forms.DataGridViewTextBoxColumn ValorDep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdInss;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CompInss;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FaixaInss;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TetoFaixaInss;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PorcInss;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ParcDeduInss;
     }
 }

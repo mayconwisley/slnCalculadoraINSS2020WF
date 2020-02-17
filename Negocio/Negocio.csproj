@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Calculos\CalculoEnquadramentoFaixa.cs" />
     <Compile Include="Calculos\CalculoInssProgrecao.cs" />
+    <Compile Include="Calculos\CalculoParcelaDeduzir.cs" />
+    <Compile Include="Calculos\SelUltCompTabelas.cs" />
     <Compile Include="Dependente\Alterar.cs" />
     <Compile Include="Dependente\Excluir.cs" />
     <Compile Include="Dependente\Gravar.cs" />
@@ -53,6 +55,7 @@
     <Compile Include="INSS\Gravar.cs" />
     <Compile Include="INSS\ListaEnquadramentoFaixa.cs" />
     <Compile Include="INSS\ListaINSSCompetencia.cs" />
+    <Compile Include="INSS\ListarTetoFaixaFaixa.cs" />
     <Compile Include="INSS\ListarUtimaCompetencia.cs" />
     <Compile Include="IRRF\Alterar.cs" />
     <Compile Include="IRRF\Excluir.cs" />

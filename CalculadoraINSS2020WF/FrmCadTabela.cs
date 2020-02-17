@@ -281,8 +281,6 @@ namespace CalculadoraINSS2020WF
         #endregion
 
         #region Padrao
-
-
         private void TxtSalario_TextChanged(object sender, EventArgs e)
         {
             TxtSalario.Text = ValidarNumero.ApenasValor(TxtSalario.Text.Trim());

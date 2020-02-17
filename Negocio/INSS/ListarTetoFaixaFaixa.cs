@@ -1,33 +1,37 @@
 ﻿using BancoDados;
 using System;
+using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Negocio.INSS
 {
-    public static class ListaINSSCompetencia
+    public static class ListarTetoFaixaFaixa
     {
         static CRUD Crud;
         static StringBuilder SQL = null;
 
-        public static DataTable Consulta(DateTime Competencia)
+        public static Decimal Porcentagem(int faixa)
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
-            SQL.Append("SELECT Id, Competencia, Faixa, Teto_Faixa, Porcentagem ");
+            SQL.Append("SELECT  Teto_Faixa ");
             SQL.Append("FROM Inss ");
-            SQL.Append("WHERE Competencia >= @Competencia ");
-            SQL.Append("ORDER BY Faixa ASC");
+            SQL.Append("WHERE Faixa = @Faixa");
+
 
             try
             {
                 Crud.LimparParametro();
-                Crud.AdicionarParamentro("Competencia", Competencia);
-                DataTable dataTable = Crud.Consulta(CommandType.Text, SQL.ToString());
-                return dataTable;
+                Crud.AdicionarParamentro("Faixa", faixa);
+                decimal valFaixa = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
+                return valFaixa;
             }
             catch (Exception ex)
             {
+                return 0;
                 throw new Exception(ex.Message);
             }
         }
