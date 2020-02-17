@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DCCEBEE-C66C-49CF-A88E-883806AF529C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Negocio</RootNamespace>
+    <AssemblyName>Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculos\CalculoEnquadramentoFaixa.cs" />
+    <Compile Include="Calculos\CalculoInssProgrecao.cs" />
+    <Compile Include="Dependente\Alterar.cs" />
+    <Compile Include="Dependente\Excluir.cs" />
+    <Compile Include="Dependente\Gravar.cs" />
+    <Compile Include="Dependente\ListaDepCompetencia.cs" />
+    <Compile Include="Dependente\ListarUtimaCompetencia.cs" />
+    <Compile Include="INSS\Alterar.cs" />
+    <Compile Include="INSS\Excluir.cs" />
+    <Compile Include="INSS\Gravar.cs" />
+    <Compile Include="INSS\ListaEnquadramentoFaixa.cs" />
+    <Compile Include="INSS\ListaINSSCompetencia.cs" />
+    <Compile Include="INSS\ListarUtimaCompetencia.cs" />
+    <Compile Include="IRRF\Alterar.cs" />
+    <Compile Include="IRRF\Excluir.cs" />
+    <Compile Include="IRRF\Gravar.cs" />
+    <Compile Include="IRRF\ListaIRRFCompetencia.cs" />
+    <Compile Include="IRRF\ListarUtimaCompetencia.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalMin\Alterar.cs" />
+    <Compile Include="SalMin\Excluir.cs" />
+    <Compile Include="SalMin\Gravar.cs" />
+    <Compile Include="SalMin\ListarUtimaCompetencia.cs" />
+    <Compile Include="SalMin\ListaSalMinCompetencia.cs" />
+    <Compile Include="Utilitarios\OpcCadastro.cs" />
+    <Compile Include="Utilitarios\ValidarNumero.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BancoDados\BancoDados.csproj">
+      <Project>{94c00c37-db6b-419b-8805-16140a9dd62d}</Project>
+      <Name>BancoDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Objetos\Objetos.csproj">
+      <Project>{4c8f85ad-de0b-4e77-8986-bd2e0405601f}</Project>
+      <Name>Objetos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
