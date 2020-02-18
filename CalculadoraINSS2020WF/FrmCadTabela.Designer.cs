@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabControle = new System.Windows.Forms.TabControl();
             this.TbPgSalMin = new System.Windows.Forms.TabPage();
             this.PnlSalMin = new System.Windows.Forms.Panel();
@@ -99,14 +99,14 @@
             this.IdDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CompDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValorDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnExcluirDep = new System.Windows.Forms.Button();
-            this.BtnAlterarDep = new System.Windows.Forms.Button();
-            this.BtnGravarDep = new System.Windows.Forms.Button();
             this.TxtValorDep = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.MktCompDep = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.PnlDep = new System.Windows.Forms.Panel();
+            this.BtnGravarDep = new System.Windows.Forms.Button();
+            this.BtnExcluirDep = new System.Windows.Forms.Button();
+            this.BtnAlterarDep = new System.Windows.Forms.Button();
             this.TabControle.SuspendLayout();
             this.TbPgSalMin.SuspendLayout();
             this.PnlSalMin.SuspendLayout();
@@ -183,7 +183,7 @@
             this.DgvSalMin.ReadOnly = true;
             this.DgvSalMin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvSalMin.Size = new System.Drawing.Size(507, 277);
-            this.DgvSalMin.TabIndex = 23;
+            this.DgvSalMin.TabIndex = 6;
             this.DgvSalMin.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSalMin_CellDoubleClick);
             // 
             // IdSalMin
@@ -198,9 +198,9 @@
             // 
             this.CompSalMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompSalMin.DataPropertyName = "Competencia";
-            dataGridViewCellStyle1.Format = "MM/yyyy";
-            dataGridViewCellStyle1.NullValue = null;
-            this.CompSalMin.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle55.Format = "MM/yyyy";
+            dataGridViewCellStyle55.NullValue = null;
+            this.CompSalMin.DefaultCellStyle = dataGridViewCellStyle55;
             this.CompSalMin.HeaderText = "Competência";
             this.CompSalMin.Name = "CompSalMin";
             this.CompSalMin.ReadOnly = true;
@@ -210,10 +210,10 @@
             // 
             this.SalarioSalMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.SalarioSalMin.DataPropertyName = "Salario";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.SalarioSalMin.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle56.Format = "N2";
+            dataGridViewCellStyle56.NullValue = null;
+            this.SalarioSalMin.DefaultCellStyle = dataGridViewCellStyle56;
             this.SalarioSalMin.HeaderText = "Salário";
             this.SalarioSalMin.Name = "SalarioSalMin";
             this.SalarioSalMin.ReadOnly = true;
@@ -230,7 +230,7 @@
             this.BtnExcluirSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.BtnExcluirSalMin.Name = "BtnExcluirSalMin";
             this.BtnExcluirSalMin.Size = new System.Drawing.Size(92, 36);
-            this.BtnExcluirSalMin.TabIndex = 20;
+            this.BtnExcluirSalMin.TabIndex = 5;
             this.BtnExcluirSalMin.Text = "Excluir";
             this.BtnExcluirSalMin.UseVisualStyleBackColor = true;
             this.BtnExcluirSalMin.Click += new System.EventHandler(this.BtnExcluirSalMin_Click);
@@ -246,7 +246,7 @@
             this.BtnAlterarSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAlterarSalMin.Name = "BtnAlterarSalMin";
             this.BtnAlterarSalMin.Size = new System.Drawing.Size(92, 36);
-            this.BtnAlterarSalMin.TabIndex = 21;
+            this.BtnAlterarSalMin.TabIndex = 4;
             this.BtnAlterarSalMin.Text = "&Alterar";
             this.BtnAlterarSalMin.UseVisualStyleBackColor = true;
             this.BtnAlterarSalMin.Click += new System.EventHandler(this.BtnAlterarSalMin_Click);
@@ -261,7 +261,7 @@
             this.BtnGravarSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGravarSalMin.Name = "BtnGravarSalMin";
             this.BtnGravarSalMin.Size = new System.Drawing.Size(92, 36);
-            this.BtnGravarSalMin.TabIndex = 22;
+            this.BtnGravarSalMin.TabIndex = 3;
             this.BtnGravarSalMin.Text = "&Gravar";
             this.BtnGravarSalMin.UseVisualStyleBackColor = true;
             this.BtnGravarSalMin.Click += new System.EventHandler(this.BtnGravarSalMin_Click);
@@ -272,7 +272,7 @@
             this.TxtSalario.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSalario.Name = "TxtSalario";
             this.TxtSalario.Size = new System.Drawing.Size(130, 30);
-            this.TxtSalario.TabIndex = 5;
+            this.TxtSalario.TabIndex = 2;
             this.TxtSalario.Text = "0,00";
             this.TxtSalario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtSalario.TextChanged += new System.EventHandler(this.TxtSalario_TextChanged);
@@ -296,7 +296,7 @@
             this.MktCompSalMin.Mask = "00/0000";
             this.MktCompSalMin.Name = "MktCompSalMin";
             this.MktCompSalMin.Size = new System.Drawing.Size(102, 30);
-            this.MktCompSalMin.TabIndex = 3;
+            this.MktCompSalMin.TabIndex = 1;
             this.MktCompSalMin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MktCompSalMin_KeyDown);
             // 
             // label9
@@ -369,7 +369,7 @@
             this.BtnAlterarInss.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAlterarInss.Name = "BtnAlterarInss";
             this.BtnAlterarInss.Size = new System.Drawing.Size(92, 36);
-            this.BtnAlterarInss.TabIndex = 7;
+            this.BtnAlterarInss.TabIndex = 6;
             this.BtnAlterarInss.Text = "&Alterar";
             this.BtnAlterarInss.UseVisualStyleBackColor = true;
             this.BtnAlterarInss.Click += new System.EventHandler(this.BtnAlterarInss_Click);
@@ -384,7 +384,7 @@
             this.BtnGravarInss.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGravarInss.Name = "BtnGravarInss";
             this.BtnGravarInss.Size = new System.Drawing.Size(92, 36);
-            this.BtnGravarInss.TabIndex = 7;
+            this.BtnGravarInss.TabIndex = 5;
             this.BtnGravarInss.Text = "&Gravar";
             this.BtnGravarInss.UseVisualStyleBackColor = true;
             this.BtnGravarInss.Click += new System.EventHandler(this.BtnGravarInss_Click);
@@ -425,8 +425,8 @@
             // 
             this.CompInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompInss.DataPropertyName = "Competencia";
-            dataGridViewCellStyle3.Format = "MM/yyyy";
-            this.CompInss.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle57.Format = "MM/yyyy";
+            this.CompInss.DefaultCellStyle = dataGridViewCellStyle57;
             this.CompInss.HeaderText = "Competência";
             this.CompInss.Name = "CompInss";
             this.CompInss.ReadOnly = true;
@@ -436,8 +436,8 @@
             // 
             this.FaixaInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.FaixaInss.DataPropertyName = "Faixa";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.FaixaInss.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.FaixaInss.DefaultCellStyle = dataGridViewCellStyle58;
             this.FaixaInss.HeaderText = "Faixa";
             this.FaixaInss.Name = "FaixaInss";
             this.FaixaInss.ReadOnly = true;
@@ -447,10 +447,10 @@
             // 
             this.TetoFaixaInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.TetoFaixaInss.DataPropertyName = "Teto_Faixa";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.Format = "N2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.TetoFaixaInss.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle59.Format = "N2";
+            dataGridViewCellStyle59.NullValue = null;
+            this.TetoFaixaInss.DefaultCellStyle = dataGridViewCellStyle59;
             this.TetoFaixaInss.HeaderText = "Teto_Faixa";
             this.TetoFaixaInss.Name = "TetoFaixaInss";
             this.TetoFaixaInss.ReadOnly = true;
@@ -460,9 +460,9 @@
             // 
             this.PorcInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.PorcInss.DataPropertyName = "Porcentagem";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle6.Format = "N2";
-            this.PorcInss.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle60.Format = "N2";
+            this.PorcInss.DefaultCellStyle = dataGridViewCellStyle60;
             this.PorcInss.HeaderText = "%";
             this.PorcInss.Name = "PorcInss";
             this.PorcInss.ReadOnly = true;
@@ -472,9 +472,9 @@
             // 
             this.ParcDeduInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ParcDeduInss.DataPropertyName = "Parcela_Deduzir";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.Format = "N2";
-            this.ParcDeduInss.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle61.Format = "N2";
+            this.ParcDeduInss.DefaultCellStyle = dataGridViewCellStyle61;
             this.ParcDeduInss.HeaderText = "Parcela_Deduzir";
             this.ParcDeduInss.Name = "ParcDeduInss";
             this.ParcDeduInss.ReadOnly = true;
@@ -506,7 +506,7 @@
             this.TxtPorcInss.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPorcInss.Name = "TxtPorcInss";
             this.TxtPorcInss.Size = new System.Drawing.Size(76, 30);
-            this.TxtPorcInss.TabIndex = 3;
+            this.TxtPorcInss.TabIndex = 4;
             this.TxtPorcInss.Text = "0,00";
             this.TxtPorcInss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtPorcInss.TextChanged += new System.EventHandler(this.TxtPorcInss_TextChanged);
@@ -532,7 +532,7 @@
             this.TxtFaixaInss.Margin = new System.Windows.Forms.Padding(2);
             this.TxtFaixaInss.Name = "TxtFaixaInss";
             this.TxtFaixaInss.Size = new System.Drawing.Size(58, 30);
-            this.TxtFaixaInss.TabIndex = 3;
+            this.TxtFaixaInss.TabIndex = 2;
             this.TxtFaixaInss.Text = "1";
             this.TxtFaixaInss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtFaixaInss.TextChanged += new System.EventHandler(this.TxtFaixaInss_TextChanged);
@@ -613,7 +613,7 @@
             this.BtnExcluirIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.BtnExcluirIrrf.Name = "BtnExcluirIrrf";
             this.BtnExcluirIrrf.Size = new System.Drawing.Size(92, 36);
-            this.BtnExcluirIrrf.TabIndex = 17;
+            this.BtnExcluirIrrf.TabIndex = 7;
             this.BtnExcluirIrrf.Text = "Excluir";
             this.BtnExcluirIrrf.UseVisualStyleBackColor = true;
             this.BtnExcluirIrrf.Click += new System.EventHandler(this.BtnExcluirIrrf_Click);
@@ -629,7 +629,7 @@
             this.BtnAlterarIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAlterarIrrf.Name = "BtnAlterarIrrf";
             this.BtnAlterarIrrf.Size = new System.Drawing.Size(92, 36);
-            this.BtnAlterarIrrf.TabIndex = 18;
+            this.BtnAlterarIrrf.TabIndex = 6;
             this.BtnAlterarIrrf.Text = "&Alterar";
             this.BtnAlterarIrrf.UseVisualStyleBackColor = true;
             this.BtnAlterarIrrf.Click += new System.EventHandler(this.BtnAlterarIrrf_Click);
@@ -644,7 +644,7 @@
             this.BtnGravarIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGravarIrrf.Name = "BtnGravarIrrf";
             this.BtnGravarIrrf.Size = new System.Drawing.Size(92, 36);
-            this.BtnGravarIrrf.TabIndex = 19;
+            this.BtnGravarIrrf.TabIndex = 5;
             this.BtnGravarIrrf.Text = "&Gravar";
             this.BtnGravarIrrf.UseVisualStyleBackColor = true;
             this.BtnGravarIrrf.Click += new System.EventHandler(this.BtnGravarIrrf_Click);
@@ -669,7 +669,7 @@
             this.DgvIrrf.ReadOnly = true;
             this.DgvIrrf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvIrrf.Size = new System.Drawing.Size(503, 267);
-            this.DgvIrrf.TabIndex = 16;
+            this.DgvIrrf.TabIndex = 8;
             this.DgvIrrf.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvIrrf_CellDoubleClick);
             // 
             // IdIrrf
@@ -684,8 +684,8 @@
             // 
             this.CompIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompIrrf.DataPropertyName = "Competencia";
-            dataGridViewCellStyle8.Format = "MM/yyyy";
-            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle62.Format = "MM/yyyy";
+            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle62;
             this.CompIrrf.HeaderText = "Competência";
             this.CompIrrf.Name = "CompIrrf";
             this.CompIrrf.ReadOnly = true;
@@ -695,9 +695,9 @@
             // 
             this.LimiteIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.LimiteIrrf.DataPropertyName = "Limite";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle9.Format = "N2";
-            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle63.Format = "N2";
+            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle63;
             this.LimiteIrrf.HeaderText = "Limite";
             this.LimiteIrrf.Name = "LimiteIrrf";
             this.LimiteIrrf.ReadOnly = true;
@@ -707,9 +707,9 @@
             // 
             this.PorcIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.PorcIrrf.DataPropertyName = "Porcentagem";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.Format = "N2";
-            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle64.Format = "N2";
+            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle64;
             this.PorcIrrf.HeaderText = "%";
             this.PorcIrrf.Name = "PorcIrrf";
             this.PorcIrrf.ReadOnly = true;
@@ -719,9 +719,9 @@
             // 
             this.DescIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.DescIrrf.DataPropertyName = "Desconto";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle11.Format = "N2";
-            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle65.Format = "N2";
+            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle65;
             this.DescIrrf.HeaderText = "Desconto";
             this.DescIrrf.Name = "DescIrrf";
             this.DescIrrf.ReadOnly = true;
@@ -753,7 +753,7 @@
             this.TxtDescIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.TxtDescIrrf.Name = "TxtDescIrrf";
             this.TxtDescIrrf.Size = new System.Drawing.Size(108, 30);
-            this.TxtDescIrrf.TabIndex = 11;
+            this.TxtDescIrrf.TabIndex = 4;
             this.TxtDescIrrf.Text = "0,00";
             this.TxtDescIrrf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtDescIrrf.TextChanged += new System.EventHandler(this.TxtDescIrrf_TextChanged);
@@ -766,7 +766,7 @@
             this.TxtPorcIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPorcIrrf.Name = "TxtPorcIrrf";
             this.TxtPorcIrrf.Size = new System.Drawing.Size(76, 30);
-            this.TxtPorcIrrf.TabIndex = 12;
+            this.TxtPorcIrrf.TabIndex = 3;
             this.TxtPorcIrrf.Text = "0,00";
             this.TxtPorcIrrf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtPorcIrrf.TextChanged += new System.EventHandler(this.TxtPorcIrrf_TextChanged);
@@ -779,7 +779,7 @@
             this.TxtLimiteIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.TxtLimiteIrrf.Name = "TxtLimiteIrrf";
             this.TxtLimiteIrrf.Size = new System.Drawing.Size(128, 30);
-            this.TxtLimiteIrrf.TabIndex = 13;
+            this.TxtLimiteIrrf.TabIndex = 2;
             this.TxtLimiteIrrf.Text = "0,00";
             this.TxtLimiteIrrf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtLimiteIrrf.TextChanged += new System.EventHandler(this.TxtLimiteIrrf_TextChanged);
@@ -803,7 +803,7 @@
             this.MktCompIrrf.Mask = "00/0000";
             this.MktCompIrrf.Name = "MktCompIrrf";
             this.MktCompIrrf.Size = new System.Drawing.Size(102, 30);
-            this.MktCompIrrf.TabIndex = 9;
+            this.MktCompIrrf.TabIndex = 1;
             this.MktCompIrrf.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MktCompIrrf_KeyDown);
             // 
             // label8
@@ -851,7 +851,7 @@
             this.DgvDep.ReadOnly = true;
             this.DgvDep.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvDep.Size = new System.Drawing.Size(505, 277);
-            this.DgvDep.TabIndex = 23;
+            this.DgvDep.TabIndex = 6;
             this.DgvDep.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDep_CellDoubleClick);
             // 
             // IdDep
@@ -866,8 +866,8 @@
             // 
             this.CompDep.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompDep.DataPropertyName = "Competencia";
-            dataGridViewCellStyle12.Format = "MM/yyyy";
-            this.CompDep.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle53.Format = "MM/yyyy";
+            this.CompDep.DefaultCellStyle = dataGridViewCellStyle53;
             this.CompDep.HeaderText = "Competência";
             this.CompDep.Name = "CompDep";
             this.CompDep.ReadOnly = true;
@@ -876,60 +876,13 @@
             // ValorDep
             // 
             this.ValorDep.DataPropertyName = "Valor";
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle13.Format = "N2";
-            this.ValorDep.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle54.Format = "N2";
+            this.ValorDep.DefaultCellStyle = dataGridViewCellStyle54;
             this.ValorDep.HeaderText = "Valor";
             this.ValorDep.Name = "ValorDep";
             this.ValorDep.ReadOnly = true;
             this.ValorDep.Width = 94;
-            // 
-            // BtnExcluirDep
-            // 
-            this.BtnExcluirDep.Enabled = false;
-            this.BtnExcluirDep.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnExcluirDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.BtnExcluirDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BtnExcluirDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExcluirDep.Location = new System.Drawing.Point(421, 85);
-            this.BtnExcluirDep.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnExcluirDep.Name = "BtnExcluirDep";
-            this.BtnExcluirDep.Size = new System.Drawing.Size(92, 36);
-            this.BtnExcluirDep.TabIndex = 20;
-            this.BtnExcluirDep.Text = "Excluir";
-            this.BtnExcluirDep.UseVisualStyleBackColor = true;
-            this.BtnExcluirDep.Click += new System.EventHandler(this.BtnExcluirDep_Click);
-            // 
-            // BtnAlterarDep
-            // 
-            this.BtnAlterarDep.Enabled = false;
-            this.BtnAlterarDep.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnAlterarDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.BtnAlterarDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BtnAlterarDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAlterarDep.Location = new System.Drawing.Point(421, 43);
-            this.BtnAlterarDep.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnAlterarDep.Name = "BtnAlterarDep";
-            this.BtnAlterarDep.Size = new System.Drawing.Size(92, 36);
-            this.BtnAlterarDep.TabIndex = 21;
-            this.BtnAlterarDep.Text = "&Alterar";
-            this.BtnAlterarDep.UseVisualStyleBackColor = true;
-            this.BtnAlterarDep.Click += new System.EventHandler(this.BtnAlterarDep_Click);
-            // 
-            // BtnGravarDep
-            // 
-            this.BtnGravarDep.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnGravarDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.BtnGravarDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BtnGravarDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGravarDep.Location = new System.Drawing.Point(421, 2);
-            this.BtnGravarDep.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnGravarDep.Name = "BtnGravarDep";
-            this.BtnGravarDep.Size = new System.Drawing.Size(92, 36);
-            this.BtnGravarDep.TabIndex = 22;
-            this.BtnGravarDep.Text = "&Gravar";
-            this.BtnGravarDep.UseVisualStyleBackColor = true;
-            this.BtnGravarDep.Click += new System.EventHandler(this.BtnGravarDep_Click);
             // 
             // TxtValorDep
             // 
@@ -937,7 +890,7 @@
             this.TxtValorDep.Margin = new System.Windows.Forms.Padding(2);
             this.TxtValorDep.Name = "TxtValorDep";
             this.TxtValorDep.Size = new System.Drawing.Size(130, 30);
-            this.TxtValorDep.TabIndex = 9;
+            this.TxtValorDep.TabIndex = 2;
             this.TxtValorDep.Text = "0,00";
             this.TxtValorDep.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtValorDep.TextChanged += new System.EventHandler(this.TxtValorDep_TextChanged);
@@ -961,7 +914,7 @@
             this.MktCompDep.Mask = "00/0000";
             this.MktCompDep.Name = "MktCompDep";
             this.MktCompDep.Size = new System.Drawing.Size(102, 30);
-            this.MktCompDep.TabIndex = 7;
+            this.MktCompDep.TabIndex = 1;
             this.MktCompDep.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MktCompDep_KeyDown);
             // 
             // label12
@@ -985,6 +938,53 @@
             this.PnlDep.Name = "PnlDep";
             this.PnlDep.Size = new System.Drawing.Size(515, 410);
             this.PnlDep.TabIndex = 24;
+            // 
+            // BtnGravarDep
+            // 
+            this.BtnGravarDep.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.BtnGravarDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.BtnGravarDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnGravarDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGravarDep.Location = new System.Drawing.Point(421, 2);
+            this.BtnGravarDep.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnGravarDep.Name = "BtnGravarDep";
+            this.BtnGravarDep.Size = new System.Drawing.Size(92, 36);
+            this.BtnGravarDep.TabIndex = 3;
+            this.BtnGravarDep.Text = "&Gravar";
+            this.BtnGravarDep.UseVisualStyleBackColor = true;
+            this.BtnGravarDep.Click += new System.EventHandler(this.BtnGravarDep_Click);
+            // 
+            // BtnExcluirDep
+            // 
+            this.BtnExcluirDep.Enabled = false;
+            this.BtnExcluirDep.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.BtnExcluirDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.BtnExcluirDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnExcluirDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExcluirDep.Location = new System.Drawing.Point(421, 85);
+            this.BtnExcluirDep.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnExcluirDep.Name = "BtnExcluirDep";
+            this.BtnExcluirDep.Size = new System.Drawing.Size(92, 36);
+            this.BtnExcluirDep.TabIndex = 5;
+            this.BtnExcluirDep.Text = "Excluir";
+            this.BtnExcluirDep.UseVisualStyleBackColor = true;
+            this.BtnExcluirDep.Click += new System.EventHandler(this.BtnExcluirDep_Click);
+            // 
+            // BtnAlterarDep
+            // 
+            this.BtnAlterarDep.Enabled = false;
+            this.BtnAlterarDep.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.BtnAlterarDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.BtnAlterarDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnAlterarDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAlterarDep.Location = new System.Drawing.Point(421, 43);
+            this.BtnAlterarDep.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnAlterarDep.Name = "BtnAlterarDep";
+            this.BtnAlterarDep.Size = new System.Drawing.Size(92, 36);
+            this.BtnAlterarDep.TabIndex = 4;
+            this.BtnAlterarDep.Text = "&Alterar";
+            this.BtnAlterarDep.UseVisualStyleBackColor = true;
+            this.BtnAlterarDep.Click += new System.EventHandler(this.BtnAlterarDep_Click);
             // 
             // FrmCadTabela
             // 
