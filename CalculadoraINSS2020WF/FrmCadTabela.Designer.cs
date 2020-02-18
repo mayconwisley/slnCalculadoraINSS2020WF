@@ -119,6 +119,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DgvIrrf)).BeginInit();
             this.TbPgDep.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDep)).BeginInit();
+            this.PnlDep.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControle
@@ -127,11 +128,11 @@
             this.TabControle.Controls.Add(this.TbPgINSS);
             this.TabControle.Controls.Add(this.TbPgIRRF);
             this.TabControle.Controls.Add(this.TbPgDep);
-            this.TabControle.Location = new System.Drawing.Point(9, 16);
+            this.TabControle.Location = new System.Drawing.Point(8, 14);
             this.TabControle.Margin = new System.Windows.Forms.Padding(2);
             this.TabControle.Name = "TabControle";
             this.TabControle.SelectedIndex = 0;
-            this.TabControle.Size = new System.Drawing.Size(525, 454);
+            this.TabControle.Size = new System.Drawing.Size(527, 452);
             this.TabControle.TabIndex = 0;
             this.TabControle.SelectedIndexChanged += new System.EventHandler(this.TabControle_SelectedIndexChanged);
             // 
@@ -139,11 +140,11 @@
             // 
             this.TbPgSalMin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.TbPgSalMin.Controls.Add(this.PnlSalMin);
-            this.TbPgSalMin.Location = new System.Drawing.Point(4, 38);
+            this.TbPgSalMin.Location = new System.Drawing.Point(4, 34);
             this.TbPgSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.TbPgSalMin.Name = "TbPgSalMin";
             this.TbPgSalMin.Padding = new System.Windows.Forms.Padding(2);
-            this.TbPgSalMin.Size = new System.Drawing.Size(517, 412);
+            this.TbPgSalMin.Size = new System.Drawing.Size(519, 414);
             this.TbPgSalMin.TabIndex = 2;
             this.TbPgSalMin.Text = "Salário Mínimo";
             // 
@@ -161,7 +162,7 @@
             this.PnlSalMin.Location = new System.Drawing.Point(2, 2);
             this.PnlSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.PnlSalMin.Name = "PnlSalMin";
-            this.PnlSalMin.Size = new System.Drawing.Size(513, 408);
+            this.PnlSalMin.Size = new System.Drawing.Size(515, 410);
             this.PnlSalMin.TabIndex = 0;
             // 
             // DgvSalMin
@@ -175,13 +176,13 @@
             this.IdSalMin,
             this.CompSalMin,
             this.SalarioSalMin});
-            this.DgvSalMin.Location = new System.Drawing.Point(7, 152);
+            this.DgvSalMin.Location = new System.Drawing.Point(6, 131);
             this.DgvSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.DgvSalMin.MultiSelect = false;
             this.DgvSalMin.Name = "DgvSalMin";
             this.DgvSalMin.ReadOnly = true;
             this.DgvSalMin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvSalMin.Size = new System.Drawing.Size(502, 254);
+            this.DgvSalMin.Size = new System.Drawing.Size(507, 277);
             this.DgvSalMin.TabIndex = 23;
             this.DgvSalMin.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSalMin_CellDoubleClick);
             // 
@@ -216,7 +217,7 @@
             this.SalarioSalMin.HeaderText = "Salário";
             this.SalarioSalMin.Name = "SalarioSalMin";
             this.SalarioSalMin.ReadOnly = true;
-            this.SalarioSalMin.Width = 114;
+            this.SalarioSalMin.Width = 98;
             // 
             // BtnExcluirSalMin
             // 
@@ -225,10 +226,10 @@
             this.BtnExcluirSalMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnExcluirSalMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnExcluirSalMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExcluirSalMin.Location = new System.Drawing.Point(401, 107);
+            this.BtnExcluirSalMin.Location = new System.Drawing.Point(421, 85);
             this.BtnExcluirSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.BtnExcluirSalMin.Name = "BtnExcluirSalMin";
-            this.BtnExcluirSalMin.Size = new System.Drawing.Size(107, 42);
+            this.BtnExcluirSalMin.Size = new System.Drawing.Size(92, 36);
             this.BtnExcluirSalMin.TabIndex = 20;
             this.BtnExcluirSalMin.Text = "Excluir";
             this.BtnExcluirSalMin.UseVisualStyleBackColor = true;
@@ -241,10 +242,10 @@
             this.BtnAlterarSalMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnAlterarSalMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnAlterarSalMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAlterarSalMin.Location = new System.Drawing.Point(401, 58);
+            this.BtnAlterarSalMin.Location = new System.Drawing.Point(421, 43);
             this.BtnAlterarSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAlterarSalMin.Name = "BtnAlterarSalMin";
-            this.BtnAlterarSalMin.Size = new System.Drawing.Size(107, 42);
+            this.BtnAlterarSalMin.Size = new System.Drawing.Size(92, 36);
             this.BtnAlterarSalMin.TabIndex = 21;
             this.BtnAlterarSalMin.Text = "&Alterar";
             this.BtnAlterarSalMin.UseVisualStyleBackColor = true;
@@ -256,10 +257,10 @@
             this.BtnGravarSalMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnGravarSalMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnGravarSalMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGravarSalMin.Location = new System.Drawing.Point(401, 11);
+            this.BtnGravarSalMin.Location = new System.Drawing.Point(421, 2);
             this.BtnGravarSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGravarSalMin.Name = "BtnGravarSalMin";
-            this.BtnGravarSalMin.Size = new System.Drawing.Size(107, 42);
+            this.BtnGravarSalMin.Size = new System.Drawing.Size(92, 36);
             this.BtnGravarSalMin.TabIndex = 22;
             this.BtnGravarSalMin.Text = "&Gravar";
             this.BtnGravarSalMin.UseVisualStyleBackColor = true;
@@ -267,10 +268,10 @@
             // 
             // TxtSalario
             // 
-            this.TxtSalario.Location = new System.Drawing.Point(7, 105);
+            this.TxtSalario.Location = new System.Drawing.Point(6, 91);
             this.TxtSalario.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSalario.Name = "TxtSalario";
-            this.TxtSalario.Size = new System.Drawing.Size(151, 35);
+            this.TxtSalario.Size = new System.Drawing.Size(130, 30);
             this.TxtSalario.TabIndex = 5;
             this.TxtSalario.Text = "0,00";
             this.TxtSalario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -281,20 +282,20 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(2, 71);
+            this.label10.Location = new System.Drawing.Point(2, 61);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 29);
+            this.label10.Size = new System.Drawing.Size(73, 25);
             this.label10.TabIndex = 4;
             this.label10.Text = "Salário";
             // 
             // MktCompSalMin
             // 
-            this.MktCompSalMin.Location = new System.Drawing.Point(7, 33);
+            this.MktCompSalMin.Location = new System.Drawing.Point(6, 28);
             this.MktCompSalMin.Margin = new System.Windows.Forms.Padding(2);
             this.MktCompSalMin.Mask = "00/0000";
             this.MktCompSalMin.Name = "MktCompSalMin";
-            this.MktCompSalMin.Size = new System.Drawing.Size(118, 35);
+            this.MktCompSalMin.Size = new System.Drawing.Size(102, 30);
             this.MktCompSalMin.TabIndex = 3;
             this.MktCompSalMin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MktCompSalMin_KeyDown);
             // 
@@ -304,7 +305,7 @@
             this.label9.Location = new System.Drawing.Point(2, 2);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 29);
+            this.label9.Size = new System.Drawing.Size(128, 25);
             this.label9.TabIndex = 2;
             this.label9.Text = "Competência";
             // 
@@ -312,11 +313,11 @@
             // 
             this.TbPgINSS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.TbPgINSS.Controls.Add(this.PnlInss);
-            this.TbPgINSS.Location = new System.Drawing.Point(4, 38);
+            this.TbPgINSS.Location = new System.Drawing.Point(4, 34);
             this.TbPgINSS.Margin = new System.Windows.Forms.Padding(2);
             this.TbPgINSS.Name = "TbPgINSS";
             this.TbPgINSS.Padding = new System.Windows.Forms.Padding(2);
-            this.TbPgINSS.Size = new System.Drawing.Size(517, 412);
+            this.TbPgINSS.Size = new System.Drawing.Size(519, 414);
             this.TbPgINSS.TabIndex = 0;
             this.TbPgINSS.Text = "INSS";
             // 
@@ -338,7 +339,7 @@
             this.PnlInss.Location = new System.Drawing.Point(2, 2);
             this.PnlInss.Margin = new System.Windows.Forms.Padding(2);
             this.PnlInss.Name = "PnlInss";
-            this.PnlInss.Size = new System.Drawing.Size(513, 408);
+            this.PnlInss.Size = new System.Drawing.Size(515, 410);
             this.PnlInss.TabIndex = 0;
             // 
             // BtnExcluirInss
@@ -348,10 +349,10 @@
             this.BtnExcluirInss.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnExcluirInss.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnExcluirInss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExcluirInss.Location = new System.Drawing.Point(401, 107);
+            this.BtnExcluirInss.Location = new System.Drawing.Point(421, 91);
             this.BtnExcluirInss.Margin = new System.Windows.Forms.Padding(2);
             this.BtnExcluirInss.Name = "BtnExcluirInss";
-            this.BtnExcluirInss.Size = new System.Drawing.Size(107, 42);
+            this.BtnExcluirInss.Size = new System.Drawing.Size(92, 36);
             this.BtnExcluirInss.TabIndex = 7;
             this.BtnExcluirInss.Text = "Excluir";
             this.BtnExcluirInss.UseVisualStyleBackColor = true;
@@ -364,10 +365,10 @@
             this.BtnAlterarInss.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnAlterarInss.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnAlterarInss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAlterarInss.Location = new System.Drawing.Point(401, 58);
+            this.BtnAlterarInss.Location = new System.Drawing.Point(421, 49);
             this.BtnAlterarInss.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAlterarInss.Name = "BtnAlterarInss";
-            this.BtnAlterarInss.Size = new System.Drawing.Size(107, 42);
+            this.BtnAlterarInss.Size = new System.Drawing.Size(92, 36);
             this.BtnAlterarInss.TabIndex = 7;
             this.BtnAlterarInss.Text = "&Alterar";
             this.BtnAlterarInss.UseVisualStyleBackColor = true;
@@ -379,10 +380,10 @@
             this.BtnGravarInss.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnGravarInss.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnGravarInss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGravarInss.Location = new System.Drawing.Point(401, 11);
+            this.BtnGravarInss.Location = new System.Drawing.Point(421, 8);
             this.BtnGravarInss.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGravarInss.Name = "BtnGravarInss";
-            this.BtnGravarInss.Size = new System.Drawing.Size(107, 42);
+            this.BtnGravarInss.Size = new System.Drawing.Size(92, 36);
             this.BtnGravarInss.TabIndex = 7;
             this.BtnGravarInss.Text = "&Gravar";
             this.BtnGravarInss.UseVisualStyleBackColor = true;
@@ -402,13 +403,13 @@
             this.TetoFaixaInss,
             this.PorcInss,
             this.ParcDeduInss});
-            this.DgvInss.Location = new System.Drawing.Point(7, 163);
+            this.DgvInss.Location = new System.Drawing.Point(6, 141);
             this.DgvInss.Margin = new System.Windows.Forms.Padding(2);
             this.DgvInss.MultiSelect = false;
             this.DgvInss.Name = "DgvInss";
             this.DgvInss.ReadOnly = true;
             this.DgvInss.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvInss.Size = new System.Drawing.Size(502, 243);
+            this.DgvInss.Size = new System.Drawing.Size(507, 267);
             this.DgvInss.TabIndex = 6;
             this.DgvInss.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvInss_CellDoubleClick);
             // 
@@ -440,7 +441,7 @@
             this.FaixaInss.HeaderText = "Faixa";
             this.FaixaInss.Name = "FaixaInss";
             this.FaixaInss.ReadOnly = true;
-            this.FaixaInss.Width = 96;
+            this.FaixaInss.Width = 85;
             // 
             // TetoFaixaInss
             // 
@@ -453,7 +454,7 @@
             this.TetoFaixaInss.HeaderText = "Teto_Faixa";
             this.TetoFaixaInss.Name = "TetoFaixaInss";
             this.TetoFaixaInss.ReadOnly = true;
-            this.TetoFaixaInss.Width = 159;
+            this.TetoFaixaInss.Width = 136;
             // 
             // PorcInss
             // 
@@ -465,7 +466,7 @@
             this.PorcInss.HeaderText = "%";
             this.PorcInss.Name = "PorcInss";
             this.PorcInss.ReadOnly = true;
-            this.PorcInss.Width = 60;
+            this.PorcInss.Width = 55;
             // 
             // ParcDeduInss
             // 
@@ -477,34 +478,34 @@
             this.ParcDeduInss.HeaderText = "Parcela_Deduzir";
             this.ParcDeduInss.Name = "ParcDeduInss";
             this.ParcDeduInss.ReadOnly = true;
-            this.ParcDeduInss.Width = 216;
+            this.ParcDeduInss.Width = 181;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(264, 78);
+            this.label4.Location = new System.Drawing.Point(226, 67);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 29);
+            this.label4.Size = new System.Drawing.Size(30, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "%";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(79, 78);
+            this.label3.Location = new System.Drawing.Point(68, 67);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 29);
+            this.label3.Size = new System.Drawing.Size(105, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Teto Faixa";
             // 
             // TxtPorcInss
             // 
-            this.TxtPorcInss.Location = new System.Drawing.Point(236, 109);
+            this.TxtPorcInss.Location = new System.Drawing.Point(202, 94);
             this.TxtPorcInss.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPorcInss.Name = "TxtPorcInss";
-            this.TxtPorcInss.Size = new System.Drawing.Size(88, 35);
+            this.TxtPorcInss.Size = new System.Drawing.Size(76, 30);
             this.TxtPorcInss.TabIndex = 3;
             this.TxtPorcInss.Text = "0,00";
             this.TxtPorcInss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -514,10 +515,10 @@
             // 
             // TxtTetoFaixaInss
             // 
-            this.TxtTetoFaixaInss.Location = new System.Drawing.Point(79, 109);
+            this.TxtTetoFaixaInss.Location = new System.Drawing.Point(68, 94);
             this.TxtTetoFaixaInss.Margin = new System.Windows.Forms.Padding(2);
             this.TxtTetoFaixaInss.Name = "TxtTetoFaixaInss";
-            this.TxtTetoFaixaInss.Size = new System.Drawing.Size(149, 35);
+            this.TxtTetoFaixaInss.Size = new System.Drawing.Size(128, 30);
             this.TxtTetoFaixaInss.TabIndex = 3;
             this.TxtTetoFaixaInss.Text = "0,00";
             this.TxtTetoFaixaInss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -527,10 +528,10 @@
             // 
             // TxtFaixaInss
             // 
-            this.TxtFaixaInss.Location = new System.Drawing.Point(7, 109);
+            this.TxtFaixaInss.Location = new System.Drawing.Point(6, 94);
             this.TxtFaixaInss.Margin = new System.Windows.Forms.Padding(2);
             this.TxtFaixaInss.Name = "TxtFaixaInss";
-            this.TxtFaixaInss.Size = new System.Drawing.Size(67, 35);
+            this.TxtFaixaInss.Size = new System.Drawing.Size(58, 30);
             this.TxtFaixaInss.TabIndex = 3;
             this.TxtFaixaInss.Text = "1";
             this.TxtFaixaInss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -541,30 +542,30 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 78);
+            this.label2.Location = new System.Drawing.Point(2, 67);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 29);
+            this.label2.Size = new System.Drawing.Size(60, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Faixa";
             // 
             // MktCompInss
             // 
-            this.MktCompInss.Location = new System.Drawing.Point(7, 40);
+            this.MktCompInss.Location = new System.Drawing.Point(6, 34);
             this.MktCompInss.Margin = new System.Windows.Forms.Padding(2);
             this.MktCompInss.Mask = "00/0000";
             this.MktCompInss.Name = "MktCompInss";
-            this.MktCompInss.Size = new System.Drawing.Size(118, 35);
+            this.MktCompInss.Size = new System.Drawing.Size(102, 30);
             this.MktCompInss.TabIndex = 1;
             this.MktCompInss.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MktCompInss_KeyDown);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 9);
+            this.label1.Location = new System.Drawing.Point(2, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 29);
+            this.label1.Size = new System.Drawing.Size(128, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Competência";
             // 
@@ -572,11 +573,11 @@
             // 
             this.TbPgIRRF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.TbPgIRRF.Controls.Add(this.PnlIrrf);
-            this.TbPgIRRF.Location = new System.Drawing.Point(4, 38);
+            this.TbPgIRRF.Location = new System.Drawing.Point(4, 34);
             this.TbPgIRRF.Margin = new System.Windows.Forms.Padding(2);
             this.TbPgIRRF.Name = "TbPgIRRF";
             this.TbPgIRRF.Padding = new System.Windows.Forms.Padding(2);
-            this.TbPgIRRF.Size = new System.Drawing.Size(517, 412);
+            this.TbPgIRRF.Size = new System.Drawing.Size(519, 414);
             this.TbPgIRRF.TabIndex = 1;
             this.TbPgIRRF.Text = "IRRF";
             // 
@@ -598,7 +599,7 @@
             this.PnlIrrf.Location = new System.Drawing.Point(2, 2);
             this.PnlIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.PnlIrrf.Name = "PnlIrrf";
-            this.PnlIrrf.Size = new System.Drawing.Size(513, 408);
+            this.PnlIrrf.Size = new System.Drawing.Size(515, 410);
             this.PnlIrrf.TabIndex = 0;
             // 
             // BtnExcluirIrrf
@@ -608,10 +609,10 @@
             this.BtnExcluirIrrf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnExcluirIrrf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnExcluirIrrf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExcluirIrrf.Location = new System.Drawing.Point(399, 107);
+            this.BtnExcluirIrrf.Location = new System.Drawing.Point(421, 92);
             this.BtnExcluirIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.BtnExcluirIrrf.Name = "BtnExcluirIrrf";
-            this.BtnExcluirIrrf.Size = new System.Drawing.Size(107, 42);
+            this.BtnExcluirIrrf.Size = new System.Drawing.Size(92, 36);
             this.BtnExcluirIrrf.TabIndex = 17;
             this.BtnExcluirIrrf.Text = "Excluir";
             this.BtnExcluirIrrf.UseVisualStyleBackColor = true;
@@ -624,10 +625,10 @@
             this.BtnAlterarIrrf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnAlterarIrrf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnAlterarIrrf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAlterarIrrf.Location = new System.Drawing.Point(399, 58);
+            this.BtnAlterarIrrf.Location = new System.Drawing.Point(421, 50);
             this.BtnAlterarIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAlterarIrrf.Name = "BtnAlterarIrrf";
-            this.BtnAlterarIrrf.Size = new System.Drawing.Size(107, 42);
+            this.BtnAlterarIrrf.Size = new System.Drawing.Size(92, 36);
             this.BtnAlterarIrrf.TabIndex = 18;
             this.BtnAlterarIrrf.Text = "&Alterar";
             this.BtnAlterarIrrf.UseVisualStyleBackColor = true;
@@ -639,10 +640,10 @@
             this.BtnGravarIrrf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnGravarIrrf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnGravarIrrf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGravarIrrf.Location = new System.Drawing.Point(399, 9);
+            this.BtnGravarIrrf.Location = new System.Drawing.Point(421, 8);
             this.BtnGravarIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGravarIrrf.Name = "BtnGravarIrrf";
-            this.BtnGravarIrrf.Size = new System.Drawing.Size(107, 42);
+            this.BtnGravarIrrf.Size = new System.Drawing.Size(92, 36);
             this.BtnGravarIrrf.TabIndex = 19;
             this.BtnGravarIrrf.Text = "&Gravar";
             this.BtnGravarIrrf.UseVisualStyleBackColor = true;
@@ -661,13 +662,13 @@
             this.LimiteIrrf,
             this.PorcIrrf,
             this.DescIrrf});
-            this.DgvIrrf.Location = new System.Drawing.Point(12, 163);
+            this.DgvIrrf.Location = new System.Drawing.Point(10, 141);
             this.DgvIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.DgvIrrf.MultiSelect = false;
             this.DgvIrrf.Name = "DgvIrrf";
             this.DgvIrrf.ReadOnly = true;
             this.DgvIrrf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvIrrf.Size = new System.Drawing.Size(495, 243);
+            this.DgvIrrf.Size = new System.Drawing.Size(503, 267);
             this.DgvIrrf.TabIndex = 16;
             this.DgvIrrf.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvIrrf_CellDoubleClick);
             // 
@@ -700,7 +701,7 @@
             this.LimiteIrrf.HeaderText = "Limite";
             this.LimiteIrrf.Name = "LimiteIrrf";
             this.LimiteIrrf.ReadOnly = true;
-            this.LimiteIrrf.Width = 103;
+            this.LimiteIrrf.Width = 88;
             // 
             // PorcIrrf
             // 
@@ -712,7 +713,7 @@
             this.PorcIrrf.HeaderText = "%";
             this.PorcIrrf.Name = "PorcIrrf";
             this.PorcIrrf.ReadOnly = true;
-            this.PorcIrrf.Width = 60;
+            this.PorcIrrf.Width = 55;
             // 
             // DescIrrf
             // 
@@ -724,34 +725,34 @@
             this.DescIrrf.HeaderText = "Desconto";
             this.DescIrrf.Name = "DescIrrf";
             this.DescIrrf.ReadOnly = true;
-            this.DescIrrf.Width = 140;
+            this.DescIrrf.Width = 120;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(254, 78);
+            this.label5.Location = new System.Drawing.Point(218, 67);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 29);
+            this.label5.Size = new System.Drawing.Size(95, 25);
             this.label5.TabIndex = 15;
             this.label5.Text = "Desconto";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(196, 78);
+            this.label6.Location = new System.Drawing.Point(168, 67);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 29);
+            this.label6.Size = new System.Drawing.Size(30, 25);
             this.label6.TabIndex = 14;
             this.label6.Text = "%";
             // 
             // TxtDescIrrf
             // 
-            this.TxtDescIrrf.Location = new System.Drawing.Point(259, 109);
+            this.TxtDescIrrf.Location = new System.Drawing.Point(222, 94);
             this.TxtDescIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.TxtDescIrrf.Name = "TxtDescIrrf";
-            this.TxtDescIrrf.Size = new System.Drawing.Size(125, 35);
+            this.TxtDescIrrf.Size = new System.Drawing.Size(108, 30);
             this.TxtDescIrrf.TabIndex = 11;
             this.TxtDescIrrf.Text = "0,00";
             this.TxtDescIrrf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -761,10 +762,10 @@
             // 
             // TxtPorcIrrf
             // 
-            this.TxtPorcIrrf.Location = new System.Drawing.Point(168, 109);
+            this.TxtPorcIrrf.Location = new System.Drawing.Point(144, 94);
             this.TxtPorcIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPorcIrrf.Name = "TxtPorcIrrf";
-            this.TxtPorcIrrf.Size = new System.Drawing.Size(88, 35);
+            this.TxtPorcIrrf.Size = new System.Drawing.Size(76, 30);
             this.TxtPorcIrrf.TabIndex = 12;
             this.TxtPorcIrrf.Text = "0,00";
             this.TxtPorcIrrf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -774,10 +775,10 @@
             // 
             // TxtLimiteIrrf
             // 
-            this.TxtLimiteIrrf.Location = new System.Drawing.Point(12, 109);
+            this.TxtLimiteIrrf.Location = new System.Drawing.Point(10, 94);
             this.TxtLimiteIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.TxtLimiteIrrf.Name = "TxtLimiteIrrf";
-            this.TxtLimiteIrrf.Size = new System.Drawing.Size(149, 35);
+            this.TxtLimiteIrrf.Size = new System.Drawing.Size(128, 30);
             this.TxtLimiteIrrf.TabIndex = 13;
             this.TxtLimiteIrrf.Text = "0,00";
             this.TxtLimiteIrrf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -788,30 +789,30 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 78);
+            this.label7.Location = new System.Drawing.Point(6, 67);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 29);
+            this.label7.Size = new System.Drawing.Size(63, 25);
             this.label7.TabIndex = 10;
             this.label7.Text = "Limite";
             // 
             // MktCompIrrf
             // 
-            this.MktCompIrrf.Location = new System.Drawing.Point(12, 40);
+            this.MktCompIrrf.Location = new System.Drawing.Point(10, 34);
             this.MktCompIrrf.Margin = new System.Windows.Forms.Padding(2);
             this.MktCompIrrf.Mask = "00/0000";
             this.MktCompIrrf.Name = "MktCompIrrf";
-            this.MktCompIrrf.Size = new System.Drawing.Size(118, 35);
+            this.MktCompIrrf.Size = new System.Drawing.Size(102, 30);
             this.MktCompIrrf.TabIndex = 9;
             this.MktCompIrrf.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MktCompIrrf_KeyDown);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 9);
+            this.label8.Location = new System.Drawing.Point(6, 8);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(156, 29);
+            this.label8.Size = new System.Drawing.Size(128, 25);
             this.label8.TabIndex = 8;
             this.label8.Text = "Competência";
             // 
@@ -819,19 +820,16 @@
             // 
             this.TbPgDep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.TbPgDep.Controls.Add(this.DgvDep);
-            this.TbPgDep.Controls.Add(this.BtnExcluirDep);
-            this.TbPgDep.Controls.Add(this.BtnAlterarDep);
-            this.TbPgDep.Controls.Add(this.BtnGravarDep);
             this.TbPgDep.Controls.Add(this.TxtValorDep);
             this.TbPgDep.Controls.Add(this.label11);
             this.TbPgDep.Controls.Add(this.MktCompDep);
             this.TbPgDep.Controls.Add(this.label12);
             this.TbPgDep.Controls.Add(this.PnlDep);
-            this.TbPgDep.Location = new System.Drawing.Point(4, 38);
+            this.TbPgDep.Location = new System.Drawing.Point(4, 34);
             this.TbPgDep.Margin = new System.Windows.Forms.Padding(2);
             this.TbPgDep.Name = "TbPgDep";
             this.TbPgDep.Padding = new System.Windows.Forms.Padding(2);
-            this.TbPgDep.Size = new System.Drawing.Size(517, 412);
+            this.TbPgDep.Size = new System.Drawing.Size(519, 414);
             this.TbPgDep.TabIndex = 3;
             this.TbPgDep.Text = "Dependente";
             // 
@@ -846,13 +844,13 @@
             this.IdDep,
             this.CompDep,
             this.ValorDep});
-            this.DgvDep.Location = new System.Drawing.Point(12, 154);
+            this.DgvDep.Location = new System.Drawing.Point(10, 133);
             this.DgvDep.Margin = new System.Windows.Forms.Padding(2);
             this.DgvDep.MultiSelect = false;
             this.DgvDep.Name = "DgvDep";
             this.DgvDep.ReadOnly = true;
             this.DgvDep.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvDep.Size = new System.Drawing.Size(502, 254);
+            this.DgvDep.Size = new System.Drawing.Size(505, 277);
             this.DgvDep.TabIndex = 23;
             this.DgvDep.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDep_CellDoubleClick);
             // 
@@ -893,10 +891,10 @@
             this.BtnExcluirDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnExcluirDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnExcluirDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExcluirDep.Location = new System.Drawing.Point(404, 107);
+            this.BtnExcluirDep.Location = new System.Drawing.Point(421, 85);
             this.BtnExcluirDep.Margin = new System.Windows.Forms.Padding(2);
             this.BtnExcluirDep.Name = "BtnExcluirDep";
-            this.BtnExcluirDep.Size = new System.Drawing.Size(107, 42);
+            this.BtnExcluirDep.Size = new System.Drawing.Size(92, 36);
             this.BtnExcluirDep.TabIndex = 20;
             this.BtnExcluirDep.Text = "Excluir";
             this.BtnExcluirDep.UseVisualStyleBackColor = true;
@@ -909,10 +907,10 @@
             this.BtnAlterarDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnAlterarDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnAlterarDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAlterarDep.Location = new System.Drawing.Point(404, 58);
+            this.BtnAlterarDep.Location = new System.Drawing.Point(421, 43);
             this.BtnAlterarDep.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAlterarDep.Name = "BtnAlterarDep";
-            this.BtnAlterarDep.Size = new System.Drawing.Size(107, 42);
+            this.BtnAlterarDep.Size = new System.Drawing.Size(92, 36);
             this.BtnAlterarDep.TabIndex = 21;
             this.BtnAlterarDep.Text = "&Alterar";
             this.BtnAlterarDep.UseVisualStyleBackColor = true;
@@ -924,10 +922,10 @@
             this.BtnGravarDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnGravarDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnGravarDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGravarDep.Location = new System.Drawing.Point(404, 11);
+            this.BtnGravarDep.Location = new System.Drawing.Point(421, 2);
             this.BtnGravarDep.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGravarDep.Name = "BtnGravarDep";
-            this.BtnGravarDep.Size = new System.Drawing.Size(107, 42);
+            this.BtnGravarDep.Size = new System.Drawing.Size(92, 36);
             this.BtnGravarDep.TabIndex = 22;
             this.BtnGravarDep.Text = "&Gravar";
             this.BtnGravarDep.UseVisualStyleBackColor = true;
@@ -935,10 +933,10 @@
             // 
             // TxtValorDep
             // 
-            this.TxtValorDep.Location = new System.Drawing.Point(12, 107);
+            this.TxtValorDep.Location = new System.Drawing.Point(10, 92);
             this.TxtValorDep.Margin = new System.Windows.Forms.Padding(2);
             this.TxtValorDep.Name = "TxtValorDep";
-            this.TxtValorDep.Size = new System.Drawing.Size(151, 35);
+            this.TxtValorDep.Size = new System.Drawing.Size(130, 30);
             this.TxtValorDep.TabIndex = 9;
             this.TxtValorDep.Text = "0,00";
             this.TxtValorDep.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -949,52 +947,55 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 76);
+            this.label11.Location = new System.Drawing.Point(6, 66);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 29);
+            this.label11.Size = new System.Drawing.Size(58, 25);
             this.label11.TabIndex = 8;
             this.label11.Text = "Valor";
             // 
             // MktCompDep
             // 
-            this.MktCompDep.Location = new System.Drawing.Point(12, 38);
+            this.MktCompDep.Location = new System.Drawing.Point(10, 33);
             this.MktCompDep.Margin = new System.Windows.Forms.Padding(2);
             this.MktCompDep.Mask = "00/0000";
             this.MktCompDep.Name = "MktCompDep";
-            this.MktCompDep.Size = new System.Drawing.Size(118, 35);
+            this.MktCompDep.Size = new System.Drawing.Size(102, 30);
             this.MktCompDep.TabIndex = 7;
             this.MktCompDep.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MktCompDep_KeyDown);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 4);
+            this.label12.Location = new System.Drawing.Point(6, 3);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(156, 29);
+            this.label12.Size = new System.Drawing.Size(128, 25);
             this.label12.TabIndex = 6;
             this.label12.Text = "Competência";
             // 
             // PnlDep
             // 
+            this.PnlDep.Controls.Add(this.BtnGravarDep);
+            this.PnlDep.Controls.Add(this.BtnExcluirDep);
+            this.PnlDep.Controls.Add(this.BtnAlterarDep);
             this.PnlDep.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlDep.Location = new System.Drawing.Point(2, 2);
             this.PnlDep.Margin = new System.Windows.Forms.Padding(2);
             this.PnlDep.Name = "PnlDep";
-            this.PnlDep.Size = new System.Drawing.Size(513, 408);
+            this.PnlDep.Size = new System.Drawing.Size(515, 410);
             this.PnlDep.TabIndex = 24;
             // 
             // FrmCadTabela
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(546, 477);
             this.Controls.Add(this.TabControle);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
+            this.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCadTabela";
@@ -1019,6 +1020,7 @@
             this.TbPgDep.ResumeLayout(false);
             this.TbPgDep.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDep)).EndInit();
+            this.PnlDep.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

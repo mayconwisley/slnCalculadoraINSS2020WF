@@ -80,18 +80,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label1.Location = new System.Drawing.Point(10, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 29);
+            this.label1.Size = new System.Drawing.Size(73, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Salário";
             // 
             // TxtSalario
             // 
-            this.TxtSalario.Location = new System.Drawing.Point(12, 41);
+            this.TxtSalario.Location = new System.Drawing.Point(10, 35);
             this.TxtSalario.Name = "TxtSalario";
-            this.TxtSalario.Size = new System.Drawing.Size(257, 35);
+            this.TxtSalario.Size = new System.Drawing.Size(297, 30);
             this.TxtSalario.TabIndex = 1;
             this.TxtSalario.Text = "0,00";
             this.TxtSalario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -105,9 +105,9 @@
             this.BtnCalcular.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCalcular.Location = new System.Drawing.Point(275, 37);
+            this.BtnCalcular.Location = new System.Drawing.Point(313, 32);
             this.BtnCalcular.Name = "BtnCalcular";
-            this.BtnCalcular.Size = new System.Drawing.Size(198, 42);
+            this.BtnCalcular.Size = new System.Drawing.Size(170, 36);
             this.BtnCalcular.TabIndex = 2;
             this.BtnCalcular.Text = "Calcular";
             this.BtnCalcular.UseVisualStyleBackColor = true;
@@ -125,12 +125,12 @@
             this.Valor_FaixaProgr,
             this.PorcProgr,
             this.DescontoProgr});
-            this.DgvCalcProgre.Location = new System.Drawing.Point(12, 161);
+            this.DgvCalcProgre.Location = new System.Drawing.Point(10, 139);
             this.DgvCalcProgre.MultiSelect = false;
             this.DgvCalcProgre.Name = "DgvCalcProgre";
             this.DgvCalcProgre.ReadOnly = true;
             this.DgvCalcProgre.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvCalcProgre.Size = new System.Drawing.Size(461, 268);
+            this.DgvCalcProgre.Size = new System.Drawing.Size(478, 312);
             this.DgvCalcProgre.TabIndex = 3;
             // 
             // FaixaProgr
@@ -140,7 +140,7 @@
             this.FaixaProgr.HeaderText = "Faixa";
             this.FaixaProgr.Name = "FaixaProgr";
             this.FaixaProgr.ReadOnly = true;
-            this.FaixaProgr.Width = 96;
+            this.FaixaProgr.Width = 85;
             // 
             // Valor_FaixaProgr
             // 
@@ -153,7 +153,7 @@
             this.Valor_FaixaProgr.HeaderText = "Valor_Faixa";
             this.Valor_FaixaProgr.Name = "Valor_FaixaProgr";
             this.Valor_FaixaProgr.ReadOnly = true;
-            this.Valor_FaixaProgr.Width = 165;
+            this.Valor_FaixaProgr.Width = 142;
             // 
             // PorcProgr
             // 
@@ -165,7 +165,7 @@
             this.PorcProgr.HeaderText = "Porcentagem";
             this.PorcProgr.Name = "PorcProgr";
             this.PorcProgr.ReadOnly = true;
-            this.PorcProgr.Width = 182;
+            this.PorcProgr.Width = 153;
             // 
             // DescontoProgr
             // 
@@ -177,7 +177,7 @@
             this.DescontoProgr.HeaderText = "Desconto";
             this.DescontoProgr.Name = "DescontoProgr";
             this.DescontoProgr.ReadOnly = true;
-            this.DescontoProgr.Width = 140;
+            this.DescontoProgr.Width = 120;
             // 
             // DgvTbInss
             // 
@@ -193,12 +193,12 @@
             this.Teto_FaixaInss,
             this.PorcInss,
             this.ParcDeduInss});
-            this.DgvTbInss.Location = new System.Drawing.Point(479, 41);
+            this.DgvTbInss.Location = new System.Drawing.Point(494, 32);
             this.DgvTbInss.MultiSelect = false;
             this.DgvTbInss.Name = "DgvTbInss";
             this.DgvTbInss.ReadOnly = true;
             this.DgvTbInss.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvTbInss.Size = new System.Drawing.Size(461, 191);
+            this.DgvTbInss.Size = new System.Drawing.Size(448, 205);
             this.DgvTbInss.TabIndex = 4;
             // 
             // IdInss
@@ -218,7 +218,7 @@
             this.CompInss.HeaderText = "Competencia";
             this.CompInss.Name = "CompInss";
             this.CompInss.ReadOnly = true;
-            this.CompInss.Width = 181;
+            this.CompInss.Width = 153;
             // 
             // FaixaInss
             // 
@@ -230,7 +230,7 @@
             this.FaixaInss.HeaderText = "Faixa";
             this.FaixaInss.Name = "FaixaInss";
             this.FaixaInss.ReadOnly = true;
-            this.FaixaInss.Width = 96;
+            this.FaixaInss.Width = 85;
             // 
             // Teto_FaixaInss
             // 
@@ -242,7 +242,7 @@
             this.Teto_FaixaInss.HeaderText = "Teto_Faixa";
             this.Teto_FaixaInss.Name = "Teto_FaixaInss";
             this.Teto_FaixaInss.ReadOnly = true;
-            this.Teto_FaixaInss.Width = 159;
+            this.Teto_FaixaInss.Width = 136;
             // 
             // PorcInss
             // 
@@ -254,7 +254,7 @@
             this.PorcInss.HeaderText = "Porcentagem";
             this.PorcInss.Name = "PorcInss";
             this.PorcInss.ReadOnly = true;
-            this.PorcInss.Width = 182;
+            this.PorcInss.Width = 153;
             // 
             // ParcDeduInss
             // 
@@ -266,7 +266,7 @@
             this.ParcDeduInss.HeaderText = "Parcela_Deduzir";
             this.ParcDeduInss.Name = "ParcDeduInss";
             this.ParcDeduInss.ReadOnly = true;
-            this.ParcDeduInss.Width = 216;
+            this.ParcDeduInss.Width = 181;
             // 
             // DgvTbIrrf
             // 
@@ -281,12 +281,12 @@
             this.LimiteIrrf,
             this.PorcIrrf,
             this.DescIrrf});
-            this.DgvTbIrrf.Location = new System.Drawing.Point(479, 238);
+            this.DgvTbIrrf.Location = new System.Drawing.Point(494, 246);
             this.DgvTbIrrf.MultiSelect = false;
             this.DgvTbIrrf.Name = "DgvTbIrrf";
             this.DgvTbIrrf.ReadOnly = true;
             this.DgvTbIrrf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvTbIrrf.Size = new System.Drawing.Size(461, 191);
+            this.DgvTbIrrf.Size = new System.Drawing.Size(448, 205);
             this.DgvTbIrrf.TabIndex = 4;
             // 
             // IdIrrf
@@ -306,7 +306,7 @@
             this.CompIrrf.HeaderText = "Competencia";
             this.CompIrrf.Name = "CompIrrf";
             this.CompIrrf.ReadOnly = true;
-            this.CompIrrf.Width = 181;
+            this.CompIrrf.Width = 153;
             // 
             // LimiteIrrf
             // 
@@ -318,7 +318,7 @@
             this.LimiteIrrf.HeaderText = "Limite";
             this.LimiteIrrf.Name = "LimiteIrrf";
             this.LimiteIrrf.ReadOnly = true;
-            this.LimiteIrrf.Width = 103;
+            this.LimiteIrrf.Width = 88;
             // 
             // PorcIrrf
             // 
@@ -330,7 +330,7 @@
             this.PorcIrrf.HeaderText = "Porcentagem";
             this.PorcIrrf.Name = "PorcIrrf";
             this.PorcIrrf.ReadOnly = true;
-            this.PorcIrrf.Width = 182;
+            this.PorcIrrf.Width = 153;
             // 
             // DescIrrf
             // 
@@ -342,14 +342,15 @@
             this.DescIrrf.HeaderText = "Desconto";
             this.DescIrrf.Name = "DescIrrf";
             this.DescIrrf.ReadOnly = true;
-            this.DescIrrf.Width = 140;
+            this.DescIrrf.Width = 120;
             // 
             // LblInfoCalcProgr
             // 
             this.LblInfoCalcProgr.AutoSize = true;
-            this.LblInfoCalcProgr.Location = new System.Drawing.Point(17, 432);
+            this.LblInfoCalcProgr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfoCalcProgr.Location = new System.Drawing.Point(12, 454);
             this.LblInfoCalcProgr.Name = "LblInfoCalcProgr";
-            this.LblInfoCalcProgr.Size = new System.Drawing.Size(31, 29);
+            this.LblInfoCalcProgr.Size = new System.Drawing.Size(21, 20);
             this.LblInfoCalcProgr.TabIndex = 7;
             this.LblInfoCalcProgr.Text = "...";
             // 
@@ -357,7 +358,7 @@
             // 
             this.LkLblCadTabela.AutoSize = true;
             this.LkLblCadTabela.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LkLblCadTabela.Location = new System.Drawing.Point(808, 9);
+            this.LkLblCadTabela.Location = new System.Drawing.Point(808, 8);
             this.LkLblCadTabela.Name = "LkLblCadTabela";
             this.LkLblCadTabela.Size = new System.Drawing.Size(134, 20);
             this.LkLblCadTabela.TabIndex = 8;
@@ -368,20 +369,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(722, 492);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(774, 500);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 17);
+            this.label4.Size = new System.Drawing.Size(168, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Desenvolvido por: Maycon Wisley";
             // 
             // LkLblProjetoGitHub
             // 
             this.LkLblProjetoGitHub.AutoSize = true;
-            this.LkLblProjetoGitHub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LkLblProjetoGitHub.Location = new System.Drawing.Point(821, 509);
+            this.LkLblProjetoGitHub.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LkLblProjetoGitHub.Location = new System.Drawing.Point(851, 513);
             this.LkLblProjetoGitHub.Name = "LkLblProjetoGitHub";
-            this.LkLblProjetoGitHub.Size = new System.Drawing.Size(121, 17);
+            this.LkLblProjetoGitHub.Size = new System.Drawing.Size(91, 13);
             this.LkLblProjetoGitHub.TabIndex = 10;
             this.LkLblProjetoGitHub.TabStop = true;
             this.LkLblProjetoGitHub.Text = "Projeto no GitHub";
@@ -390,44 +391,45 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 129);
+            this.label5.Location = new System.Drawing.Point(10, 111);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(229, 29);
+            this.label5.Size = new System.Drawing.Size(186, 25);
             this.label5.TabIndex = 11;
             this.label5.Text = "Calculo Progressivo";
             // 
             // LblInfTabelas
             // 
             this.LblInfTabelas.AutoSize = true;
-            this.LblInfTabelas.Location = new System.Drawing.Point(474, 432);
+            this.LblInfTabelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfTabelas.Location = new System.Drawing.Point(489, 454);
             this.LblInfTabelas.Name = "LblInfTabelas";
-            this.LblInfTabelas.Size = new System.Drawing.Size(31, 29);
+            this.LblInfTabelas.Size = new System.Drawing.Size(21, 20);
             this.LblInfTabelas.TabIndex = 12;
             this.LblInfTabelas.Text = "...";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(474, 9);
+            this.label7.Location = new System.Drawing.Point(489, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(244, 29);
+            this.label7.Size = new System.Drawing.Size(199, 25);
             this.label7.TabIndex = 13;
             this.label7.Text = "Tabelas INSS e IRRF";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 88);
+            this.label2.Location = new System.Drawing.Point(10, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 29);
+            this.label2.Size = new System.Drawing.Size(145, 25);
             this.label2.TabIndex = 14;
             this.label2.Text = "Nº Dependente";
             // 
             // TxtNumDep
             // 
-            this.TxtNumDep.Location = new System.Drawing.Point(196, 82);
+            this.TxtNumDep.Location = new System.Drawing.Point(244, 71);
             this.TxtNumDep.Name = "TxtNumDep";
-            this.TxtNumDep.Size = new System.Drawing.Size(73, 35);
+            this.TxtNumDep.Size = new System.Drawing.Size(63, 30);
             this.TxtNumDep.TabIndex = 15;
             this.TxtNumDep.Text = "0";
             this.TxtNumDep.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -439,7 +441,7 @@
             // 
             this.LkLblAtualizarTabelas.AutoSize = true;
             this.LkLblAtualizarTabelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LkLblAtualizarTabelas.Location = new System.Drawing.Point(827, 432);
+            this.LkLblAtualizarTabelas.Location = new System.Drawing.Point(829, 454);
             this.LkLblAtualizarTabelas.Name = "LkLblAtualizarTabelas";
             this.LkLblAtualizarTabelas.Size = new System.Drawing.Size(113, 17);
             this.LkLblAtualizarTabelas.TabIndex = 16;
@@ -449,7 +451,7 @@
             // 
             // FrmPrincipalCalcInss
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(954, 535);
@@ -469,10 +471,10 @@
             this.Controls.Add(this.BtnCalcular);
             this.Controls.Add(this.TxtSalario);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmPrincipalCalcInss";
