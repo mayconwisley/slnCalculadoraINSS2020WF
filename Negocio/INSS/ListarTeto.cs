@@ -8,30 +8,28 @@ using System.Threading.Tasks;
 
 namespace Negocio.INSS
 {
-    public static class ListarTetoFaixaFaixa
+    public static class ListarTeto
     {
         static CRUD Crud;
         static StringBuilder SQL = null;
 
-        public static Decimal TetoFaixa(int faixa)
+        public static decimal Teto()
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
-            SQL.Append("SELECT  Teto_Faixa ");
+            SQL.Append("SELECT Teto_Faixa ");
             SQL.Append("FROM Inss ");
-            SQL.Append("WHERE Faixa = @Faixa");
-
+            SQL.Append("ORDER BY Teto_Faixa DESC ");
+            SQL.Append("LIMIT 1");
 
             try
             {
                 Crud.LimparParametro();
-                Crud.AdicionarParamentro("Faixa", faixa);
-                decimal valTetoFaixa = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
-                return valTetoFaixa;
+                decimal valTeto = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
+                return valTeto;
             }
             catch (Exception ex)
             {
-                return 0;
                 throw new Exception(ex.Message);
             }
         }

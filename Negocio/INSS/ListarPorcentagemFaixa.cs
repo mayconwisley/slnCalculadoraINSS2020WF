@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace Negocio.INSS
 {
-    public static class ListarTetoFaixaFaixa
+   public static class ListarPorcentagemFaixa
     {
         static CRUD Crud;
         static StringBuilder SQL = null;
 
-        public static Decimal TetoFaixa(int faixa)
+        public static Decimal Porcentagem(int faixa)
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
-            SQL.Append("SELECT  Teto_Faixa ");
+            SQL.Append("SELECT  Porcentagem ");
             SQL.Append("FROM Inss ");
             SQL.Append("WHERE Faixa = @Faixa");
 
@@ -26,8 +26,8 @@ namespace Negocio.INSS
             {
                 Crud.LimparParametro();
                 Crud.AdicionarParamentro("Faixa", faixa);
-                decimal valTetoFaixa = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
-                return valTetoFaixa;
+                decimal valPorcentagem = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
+                return valPorcentagem;
             }
             catch (Exception ex)
             {

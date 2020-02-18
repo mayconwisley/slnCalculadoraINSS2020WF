@@ -27,6 +27,7 @@ namespace CalculadoraINSS2020WF
 
         #region Variaveis e Constantes
         int inssId = 0, irrfId = 0, salMinId = 0, depenId = 0;
+
         DateTime dtCompetencia;
         #endregion
 
@@ -95,6 +96,7 @@ namespace CalculadoraINSS2020WF
                 inssObj.Faixa = int.Parse(TxtFaixaInss.Text.Trim());
                 inssObj.Teto_Faixa = decimal.Parse(TxtTetoFaixaInss.Text.Trim());
                 inssObj.Porcentagem = decimal.Parse(TxtPorcInss.Text.Trim());
+                inssObj.Parcela_Deduzir = Negocio.Calculos.CalculoParcelaDeduzir.CalcParcDeduzir(int.Parse(TxtFaixaInss.Text.Trim()), decimal.Parse(TxtPorcInss.Text.Trim()));
 
                 switch (opcCadastro)
                 {
@@ -114,6 +116,10 @@ namespace CalculadoraINSS2020WF
                         break;
                 }
                 ListarInss();
+                Formulario.Limpar.Campos(PnlInss);
+                BtnGravarInss.Enabled = true;
+                BtnAlterarInss.Enabled = false;
+                BtnExcluirInss.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -150,6 +156,10 @@ namespace CalculadoraINSS2020WF
                         break;
                 }
                 ListarIrrf();
+                Formulario.Limpar.Campos(this);
+                BtnGravarIrrf.Enabled = true;
+                BtnAlterarIrrf.Enabled = false;
+                BtnExcluirIrrf.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -185,6 +195,10 @@ namespace CalculadoraINSS2020WF
                         break;
                 }
                 ListarSalMin();
+                Formulario.Limpar.Campos(PnlSalMin);
+                BtnGravarSalMin.Enabled = true;
+                BtnExcluirSalMin.Enabled = false;
+                BtnAlterarSalMin.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -220,6 +234,10 @@ namespace CalculadoraINSS2020WF
                         break;
                 }
                 ListarDependente();
+                Formulario.Limpar.Campos(this);
+                BtnGravarDep.Enabled = true;
+                BtnExcluirDep.Enabled = false;
+                BtnAlterarDep.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -524,6 +542,92 @@ namespace CalculadoraINSS2020WF
             if (e.KeyCode == Keys.Enter)
             {
                 ListarDependente();
+            }
+        }
+
+        private void DgvSalMin_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                dtCompetencia = DateTime.Parse(DgvSalMin.Rows[e.RowIndex].Cells["CompSalMin"].Value.ToString());
+                decimal valSalario = decimal.Parse(DgvSalMin.Rows[e.RowIndex].Cells["SalarioSalMin"].Value.ToString());
+                salMinId = int.Parse(DgvSalMin.Rows[e.RowIndex].Cells["IdSalMin"].Value.ToString());
+                MktCompSalMin.Text = dtCompetencia.ToString("MM/yyyy");
+                TxtSalario.Text = valSalario.ToString("#,##0.00");
+
+                BtnGravarSalMin.Enabled = false;
+                BtnExcluirSalMin.Enabled = true;
+                BtnAlterarSalMin.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void DgvInss_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                inssId = int.Parse(DgvInss.Rows[e.RowIndex].Cells["IdInss"].Value.ToString());
+                dtCompetencia = DateTime.Parse(DgvInss.Rows[e.RowIndex].Cells["CompInss"].Value.ToString());
+                decimal valTetoFaixa = decimal.Parse(DgvInss.Rows[e.RowIndex].Cells["TetoFaixaInss"].Value.ToString());
+                decimal porcemtagem = decimal.Parse(DgvInss.Rows[e.RowIndex].Cells["PorcInss"].Value.ToString());
+
+                MktCompInss.Text = dtCompetencia.ToString("MM/yyyy");
+                TxtFaixaInss.Text = DgvInss.Rows[e.RowIndex].Cells["FaixaInss"].Value.ToString();
+                TxtTetoFaixaInss.Text = valTetoFaixa.ToString("#,##0.00");
+                TxtPorcInss.Text = porcemtagem.ToString("#,##0.00");
+
+                BtnGravarInss.Enabled = false;
+                BtnAlterarInss.Enabled = true;
+                BtnExcluirInss.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void DgvIrrf_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                irrfId = int.Parse(DgvIrrf.Rows[e.RowIndex].Cells["IdIrrf"].Value.ToString());
+                dtCompetencia = DateTime.Parse(DgvIrrf.Rows[e.RowIndex].Cells["CompIrrf"].Value.ToString());
+                decimal valLimite = decimal.Parse(DgvIrrf.Rows[e.RowIndex].Cells["LimiteIrrf"].Value.ToString());
+                decimal porcemtagem = decimal.Parse(DgvIrrf.Rows[e.RowIndex].Cells["PorcIrrf"].Value.ToString());
+                decimal valDesconto = decimal.Parse(DgvIrrf.Rows[e.RowIndex].Cells["DescIrrf"].Value.ToString());
+
+                MktCompIrrf.Text = dtCompetencia.ToString("MM/yyyy");
+                TxtLimiteIrrf.Text = valLimite.ToString("#,##0.00");
+                TxtPorcIrrf.Text = porcemtagem.ToString("#,##0.00");
+                TxtDescIrrf.Text = valDesconto.ToString("#,##0.00");
+
+                BtnGravarIrrf.Enabled = false;
+                BtnAlterarIrrf.Enabled = true;
+                BtnExcluirIrrf.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void DgvDep_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                depenId = int.Parse(DgvDep.Rows[e.RowIndex].Cells["IdDep"].Value.ToString());
+                dtCompetencia = DateTime.Parse(DgvDep.Rows[e.RowIndex].Cells["CompDep"].Value.ToString());
+                decimal valValor = decimal.Parse(DgvDep.Rows[e.RowIndex].Cells["ValorDep"].Value.ToString());
+                BtnGravarDep.Enabled = false;
+                BtnExcluirDep.Enabled = true;
+                BtnAlterarDep.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 

@@ -6,32 +6,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Negocio.INSS
+namespace Negocio.Dependente
 {
-    public static class ListarTetoFaixaFaixa
+    public static class ListarValorDepCompetencia
     {
         static CRUD Crud;
         static StringBuilder SQL = null;
 
-        public static Decimal TetoFaixa(int faixa)
+        public static decimal SalarioCompetencia(DateTime competencia)
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
-            SQL.Append("SELECT  Teto_Faixa ");
-            SQL.Append("FROM Inss ");
-            SQL.Append("WHERE Faixa = @Faixa");
-
+            SQL.Append("SELECT Valor ");
+            SQL.Append("FROM Dependente ");
+            SQL.Append("WHERE Competencia = @Competencia ");
 
             try
             {
                 Crud.LimparParametro();
-                Crud.AdicionarParamentro("Faixa", faixa);
-                decimal valTetoFaixa = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
-                return valTetoFaixa;
+                Crud.AdicionarParamentro("Competencia", competencia);
+                decimal valDepe = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
+                return valDepe;
             }
             catch (Exception ex)
             {
-                return 0;
                 throw new Exception(ex.Message);
             }
         }

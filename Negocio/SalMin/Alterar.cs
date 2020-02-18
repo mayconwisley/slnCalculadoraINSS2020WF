@@ -16,7 +16,7 @@ namespace Negocio.SalMin
             Crud = new CRUD();
             SQL = new StringBuilder();
             SQL.Append("UPDATE SalMin ");
-            SQL.Append("SET Competencia = @Competencia, Salario = @Salario) ");
+            SQL.Append("SET Competencia = @Competencia, Salario = @Salario ");
             SQL.Append("WHERE Id = @Id");
 
             try

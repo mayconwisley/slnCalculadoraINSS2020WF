@@ -30,16 +30,17 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabControle = new System.Windows.Forms.TabControl();
             this.TbPgSalMin = new System.Windows.Forms.TabPage();
             this.PnlSalMin = new System.Windows.Forms.Panel();
@@ -60,6 +61,12 @@
             this.BtnAlterarInss = new System.Windows.Forms.Button();
             this.BtnGravarInss = new System.Windows.Forms.Button();
             this.DgvInss = new System.Windows.Forms.DataGridView();
+            this.IdInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CompInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TetoFaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PorcInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ParcDeduInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtPorcInss = new System.Windows.Forms.TextBox();
@@ -100,12 +107,6 @@
             this.MktCompDep = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.PnlDep = new System.Windows.Forms.Panel();
-            this.IdInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CompInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TetoFaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PorcInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ParcDeduInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TabControle.SuspendLayout();
             this.TbPgSalMin.SuspendLayout();
             this.PnlSalMin.SuspendLayout();
@@ -144,7 +145,7 @@
             this.TbPgSalMin.Padding = new System.Windows.Forms.Padding(2);
             this.TbPgSalMin.Size = new System.Drawing.Size(517, 412);
             this.TbPgSalMin.TabIndex = 2;
-            this.TbPgSalMin.Text = "Salário Minimo";
+            this.TbPgSalMin.Text = "Salário Mínimo";
             // 
             // PnlSalMin
             // 
@@ -182,6 +183,7 @@
             this.DgvSalMin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvSalMin.Size = new System.Drawing.Size(502, 254);
             this.DgvSalMin.TabIndex = 23;
+            this.DgvSalMin.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSalMin_CellDoubleClick);
             // 
             // IdSalMin
             // 
@@ -218,6 +220,7 @@
             // 
             // BtnExcluirSalMin
             // 
+            this.BtnExcluirSalMin.Enabled = false;
             this.BtnExcluirSalMin.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnExcluirSalMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnExcluirSalMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -233,6 +236,7 @@
             // 
             // BtnAlterarSalMin
             // 
+            this.BtnAlterarSalMin.Enabled = false;
             this.BtnAlterarSalMin.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnAlterarSalMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnAlterarSalMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -339,6 +343,7 @@
             // 
             // BtnExcluirInss
             // 
+            this.BtnExcluirInss.Enabled = false;
             this.BtnExcluirInss.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnExcluirInss.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnExcluirInss.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -354,6 +359,7 @@
             // 
             // BtnAlterarInss
             // 
+            this.BtnAlterarInss.Enabled = false;
             this.BtnAlterarInss.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnAlterarInss.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnAlterarInss.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -404,6 +410,74 @@
             this.DgvInss.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvInss.Size = new System.Drawing.Size(502, 243);
             this.DgvInss.TabIndex = 6;
+            this.DgvInss.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvInss_CellDoubleClick);
+            // 
+            // IdInss
+            // 
+            this.IdInss.DataPropertyName = "Id";
+            this.IdInss.HeaderText = "Id";
+            this.IdInss.Name = "IdInss";
+            this.IdInss.ReadOnly = true;
+            this.IdInss.Visible = false;
+            // 
+            // CompInss
+            // 
+            this.CompInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.CompInss.DataPropertyName = "Competencia";
+            dataGridViewCellStyle3.Format = "MM/yyyy";
+            this.CompInss.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CompInss.HeaderText = "Competência";
+            this.CompInss.Name = "CompInss";
+            this.CompInss.ReadOnly = true;
+            this.CompInss.Visible = false;
+            // 
+            // FaixaInss
+            // 
+            this.FaixaInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.FaixaInss.DataPropertyName = "Faixa";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.FaixaInss.DefaultCellStyle = dataGridViewCellStyle4;
+            this.FaixaInss.HeaderText = "Faixa";
+            this.FaixaInss.Name = "FaixaInss";
+            this.FaixaInss.ReadOnly = true;
+            this.FaixaInss.Width = 96;
+            // 
+            // TetoFaixaInss
+            // 
+            this.TetoFaixaInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.TetoFaixaInss.DataPropertyName = "Teto_Faixa";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.TetoFaixaInss.DefaultCellStyle = dataGridViewCellStyle5;
+            this.TetoFaixaInss.HeaderText = "Teto_Faixa";
+            this.TetoFaixaInss.Name = "TetoFaixaInss";
+            this.TetoFaixaInss.ReadOnly = true;
+            this.TetoFaixaInss.Width = 159;
+            // 
+            // PorcInss
+            // 
+            this.PorcInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.PorcInss.DataPropertyName = "Porcentagem";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "N2";
+            this.PorcInss.DefaultCellStyle = dataGridViewCellStyle6;
+            this.PorcInss.HeaderText = "%";
+            this.PorcInss.Name = "PorcInss";
+            this.PorcInss.ReadOnly = true;
+            this.PorcInss.Width = 60;
+            // 
+            // ParcDeduInss
+            // 
+            this.ParcDeduInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ParcDeduInss.DataPropertyName = "Parcela_Deduzir";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Format = "N2";
+            this.ParcDeduInss.DefaultCellStyle = dataGridViewCellStyle7;
+            this.ParcDeduInss.HeaderText = "Parcela_Deduzir";
+            this.ParcDeduInss.Name = "ParcDeduInss";
+            this.ParcDeduInss.ReadOnly = true;
+            this.ParcDeduInss.Width = 216;
             // 
             // label4
             // 
@@ -529,6 +603,7 @@
             // 
             // BtnExcluirIrrf
             // 
+            this.BtnExcluirIrrf.Enabled = false;
             this.BtnExcluirIrrf.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnExcluirIrrf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnExcluirIrrf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -544,6 +619,7 @@
             // 
             // BtnAlterarIrrf
             // 
+            this.BtnAlterarIrrf.Enabled = false;
             this.BtnAlterarIrrf.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnAlterarIrrf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnAlterarIrrf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -593,6 +669,7 @@
             this.DgvIrrf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvIrrf.Size = new System.Drawing.Size(495, 243);
             this.DgvIrrf.TabIndex = 16;
+            this.DgvIrrf.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvIrrf_CellDoubleClick);
             // 
             // IdIrrf
             // 
@@ -606,8 +683,8 @@
             // 
             this.CompIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompIrrf.DataPropertyName = "Competencia";
-            dataGridViewCellStyle7.Format = "MM/yyyy";
-            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Format = "MM/yyyy";
+            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle8;
             this.CompIrrf.HeaderText = "Competência";
             this.CompIrrf.Name = "CompIrrf";
             this.CompIrrf.ReadOnly = true;
@@ -617,9 +694,9 @@
             // 
             this.LimiteIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.LimiteIrrf.DataPropertyName = "Limite";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Format = "N2";
-            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.Format = "N2";
+            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle9;
             this.LimiteIrrf.HeaderText = "Limite";
             this.LimiteIrrf.Name = "LimiteIrrf";
             this.LimiteIrrf.ReadOnly = true;
@@ -629,9 +706,9 @@
             // 
             this.PorcIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.PorcIrrf.DataPropertyName = "Porcentagem";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle9.Format = "N2";
-            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle10.Format = "N2";
+            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle10;
             this.PorcIrrf.HeaderText = "%";
             this.PorcIrrf.Name = "PorcIrrf";
             this.PorcIrrf.ReadOnly = true;
@@ -641,9 +718,9 @@
             // 
             this.DescIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.DescIrrf.DataPropertyName = "Desconto";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.Format = "N2";
-            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Format = "N2";
+            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle11;
             this.DescIrrf.HeaderText = "Desconto";
             this.DescIrrf.Name = "DescIrrf";
             this.DescIrrf.ReadOnly = true;
@@ -777,6 +854,7 @@
             this.DgvDep.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvDep.Size = new System.Drawing.Size(502, 254);
             this.DgvDep.TabIndex = 23;
+            this.DgvDep.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDep_CellDoubleClick);
             // 
             // IdDep
             // 
@@ -790,8 +868,8 @@
             // 
             this.CompDep.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompDep.DataPropertyName = "Competencia";
-            dataGridViewCellStyle11.Format = "MM/yyyy";
-            this.CompDep.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.Format = "MM/yyyy";
+            this.CompDep.DefaultCellStyle = dataGridViewCellStyle12;
             this.CompDep.HeaderText = "Competência";
             this.CompDep.Name = "CompDep";
             this.CompDep.ReadOnly = true;
@@ -800,9 +878,9 @@
             // ValorDep
             // 
             this.ValorDep.DataPropertyName = "Valor";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle12.Format = "N2";
-            this.ValorDep.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle13.Format = "N2";
+            this.ValorDep.DefaultCellStyle = dataGridViewCellStyle13;
             this.ValorDep.HeaderText = "Valor";
             this.ValorDep.Name = "ValorDep";
             this.ValorDep.ReadOnly = true;
@@ -810,6 +888,7 @@
             // 
             // BtnExcluirDep
             // 
+            this.BtnExcluirDep.Enabled = false;
             this.BtnExcluirDep.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnExcluirDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnExcluirDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -825,6 +904,7 @@
             // 
             // BtnAlterarDep
             // 
+            this.BtnAlterarDep.Enabled = false;
             this.BtnAlterarDep.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnAlterarDep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.BtnAlterarDep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -904,71 +984,6 @@
             this.PnlDep.Name = "PnlDep";
             this.PnlDep.Size = new System.Drawing.Size(513, 408);
             this.PnlDep.TabIndex = 24;
-            // 
-            // IdInss
-            // 
-            this.IdInss.DataPropertyName = "Id";
-            this.IdInss.HeaderText = "Id";
-            this.IdInss.Name = "IdInss";
-            this.IdInss.ReadOnly = true;
-            this.IdInss.Visible = false;
-            // 
-            // CompInss
-            // 
-            this.CompInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.CompInss.DataPropertyName = "Competencia";
-            dataGridViewCellStyle3.Format = "MM/yyyy";
-            this.CompInss.DefaultCellStyle = dataGridViewCellStyle3;
-            this.CompInss.HeaderText = "Competência";
-            this.CompInss.Name = "CompInss";
-            this.CompInss.ReadOnly = true;
-            this.CompInss.Visible = false;
-            this.CompInss.Width = 181;
-            // 
-            // FaixaInss
-            // 
-            this.FaixaInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.FaixaInss.DataPropertyName = "Faixa";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.FaixaInss.DefaultCellStyle = dataGridViewCellStyle4;
-            this.FaixaInss.HeaderText = "Faixa";
-            this.FaixaInss.Name = "FaixaInss";
-            this.FaixaInss.ReadOnly = true;
-            this.FaixaInss.Width = 96;
-            // 
-            // TetoFaixaInss
-            // 
-            this.TetoFaixaInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.TetoFaixaInss.DataPropertyName = "Teto_Faixa";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.Format = "N2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.TetoFaixaInss.DefaultCellStyle = dataGridViewCellStyle5;
-            this.TetoFaixaInss.HeaderText = "Teto_Faixa";
-            this.TetoFaixaInss.Name = "TetoFaixaInss";
-            this.TetoFaixaInss.ReadOnly = true;
-            this.TetoFaixaInss.Width = 159;
-            // 
-            // PorcInss
-            // 
-            this.PorcInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.PorcInss.DataPropertyName = "Porcentagem";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle6.Format = "N2";
-            this.PorcInss.DefaultCellStyle = dataGridViewCellStyle6;
-            this.PorcInss.HeaderText = "%";
-            this.PorcInss.Name = "PorcInss";
-            this.PorcInss.ReadOnly = true;
-            this.PorcInss.Width = 60;
-            // 
-            // ParcDeduInss
-            // 
-            this.ParcDeduInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ParcDeduInss.DataPropertyName = "Parcela_Deduzir";
-            this.ParcDeduInss.HeaderText = "Parcela_Deduzir";
-            this.ParcDeduInss.Name = "ParcDeduInss";
-            this.ParcDeduInss.ReadOnly = true;
-            this.ParcDeduInss.Width = 216;
             // 
             // FrmCadTabela
             // 

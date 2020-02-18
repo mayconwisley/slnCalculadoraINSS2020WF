@@ -15,7 +15,7 @@ namespace Negocio.IRRF
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
-            SQL.Append("DELETE FROM Irrf");
+            SQL.Append("DELETE FROM Irrf ");
             SQL.Append("WHERE Id = @Id");
             try
             {

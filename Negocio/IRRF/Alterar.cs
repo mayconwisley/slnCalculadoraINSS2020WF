@@ -15,8 +15,8 @@ namespace Negocio.IRRF
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
-            SQL.Append("INSERT INTO Irrf (Competencia, Limite, Porcentagem, Desconto) ");
-            SQL.Append("SET Competencia = @Competencia , Limite = @Limite, Porcentagem = @Porcentagem, Desconto = @Desconto) ");
+            SQL.Append("INSERT INTO Irrf ");
+            SQL.Append("SET Competencia = @Competencia , Limite = @Limite, Porcentagem = @Porcentagem, Desconto = @Desconto ");
             SQL.Append("WHERE Id = @Id");
             try
             {

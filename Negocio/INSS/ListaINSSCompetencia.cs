@@ -14,7 +14,7 @@ namespace Negocio.INSS
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
-            SQL.Append("SELECT Id, Competencia, Faixa, Teto_Faixa, Porcentagem ");
+            SQL.Append("SELECT Id, Competencia, Faixa, Teto_Faixa, Porcentagem, Parcela_Deduzir ");
             SQL.Append("FROM Inss ");
             SQL.Append("WHERE Competencia >= @Competencia ");
             SQL.Append("ORDER BY Faixa ASC");
