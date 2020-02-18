@@ -96,8 +96,7 @@ namespace CalculadoraINSS2020WF
                 inssObj.Faixa = int.Parse(TxtFaixaInss.Text.Trim());
                 inssObj.Teto_Faixa = decimal.Parse(TxtTetoFaixaInss.Text.Trim());
                 inssObj.Porcentagem = decimal.Parse(TxtPorcInss.Text.Trim());
-                inssObj.Parcela_Deduzir = Negocio.Calculos.CalculoParcelaDeduzir.CalcParcDeduzir(int.Parse(TxtFaixaInss.Text.Trim()), decimal.Parse(TxtPorcInss.Text.Trim()));
-
+                inssObj.Parcela_Deduzir = Math.Round(Negocio.Calculos.CalculoParcelaDeduzir.CalcParcDeduzir(int.Parse(TxtFaixaInss.Text.Trim()), decimal.Parse(TxtPorcInss.Text.Trim())), 2);
                 switch (opcCadastro)
                 {
                     case OpcCadastro.Gravar:
@@ -126,7 +125,6 @@ namespace CalculadoraINSS2020WF
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void CadastroIrrf(OpcCadastro opcCadastro)
         {
             irrfObj = new IRRFObj();
@@ -166,7 +164,6 @@ namespace CalculadoraINSS2020WF
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void CadastroSalMin(OpcCadastro opcCadastro)
         {
             salarioMinimoObj = new SalarioMinimoObj();
@@ -628,6 +625,17 @@ namespace CalculadoraINSS2020WF
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void FrmCadTabela_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //***** Ao pressionar Enter, muda de TextBox SEM O SOM*****//
+            //***** KeyPreview = true na propriedade do FORM *****//
+            if (e.KeyChar == 13)
+            {
+                this.ProcessTabKey(true);
+                e.Handled = true;
             }
         }
 

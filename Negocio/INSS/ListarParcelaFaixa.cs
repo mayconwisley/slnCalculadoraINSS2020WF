@@ -21,12 +21,11 @@ namespace Negocio.INSS
             SQL.Append("FROM Inss ");
             SQL.Append("WHERE Faixa = @Faixa");
 
-
             try
             {
                 Crud.LimparParametro();
                 Crud.AdicionarParamentro("Faixa", faixa);
-                decimal valParcelaDeduzir = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
+                decimal valParcelaDeduzir = Math.Round(decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString()), 2);
                 return valParcelaDeduzir;
             }
             catch (Exception ex)

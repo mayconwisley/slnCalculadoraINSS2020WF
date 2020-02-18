@@ -15,7 +15,6 @@ namespace Negocio.Calculos
             {
                 decimal valDiferenca = 0, valFaixaTeto = 0, valCalcParcDeduzir = 0, valParceDeduzir = 0;
 
-
                 if (valFaixa == 1)
                 {
                     valDiferenca = 0;
@@ -23,14 +22,13 @@ namespace Negocio.Calculos
                 else
                 {
                     valDiferenca = decPorcentagem -
-                                   Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(valFaixa - 1);
-
+                                   Math.Round(Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(valFaixa - 1), 2);
                 }
 
-                valFaixaTeto = Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(valFaixa - 1);
-                valParceDeduzir = Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(valFaixa - 1);
+                valFaixaTeto = Math.Round(Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(valFaixa - 1), 2);
+                valParceDeduzir = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(valFaixa - 1), 2);
 
-                valCalcParcDeduzir = Math.Round(valFaixaTeto * (valDiferenca / 100) + valParceDeduzir, 2);
+                valCalcParcDeduzir = Math.Round(valFaixaTeto * (valDiferenca / 100) + valParceDeduzir, 5);
 
                 return valCalcParcDeduzir;
             }
@@ -39,7 +37,5 @@ namespace Negocio.Calculos
                 throw new Exception(ex.Message);
             }
         }
-
-
     }
 }

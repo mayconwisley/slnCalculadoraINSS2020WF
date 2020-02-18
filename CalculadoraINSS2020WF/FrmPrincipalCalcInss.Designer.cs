@@ -31,37 +31,22 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipalCalcInss));
             this.label1 = new System.Windows.Forms.Label();
             this.TxtSalario = new System.Windows.Forms.TextBox();
             this.BtnCalcular = new System.Windows.Forms.Button();
             this.DgvCalcProgre = new System.Windows.Forms.DataGridView();
-            this.FaixaProgr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor_FaixaProgr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PorcProgr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescontoProgr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DgvTbInss = new System.Windows.Forms.DataGridView();
-            this.IdInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CompInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Teto_FaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PorcInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ParcDeduInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DgvTbIrrf = new System.Windows.Forms.DataGridView();
-            this.IdIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CompIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LimiteIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PorcIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LblInfoCalcProgr = new System.Windows.Forms.Label();
             this.LkLblCadTabela = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
@@ -72,9 +57,32 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TxtNumDep = new System.Windows.Forms.TextBox();
             this.LkLblAtualizarTabelas = new System.Windows.Forms.LinkLabel();
+            this.DgvListParcDeduzir = new System.Windows.Forms.DataGridView();
+            this.LblInfoCalcProgre1 = new System.Windows.Forms.Label();
+            this.FaixaProgr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor_FaixaProgr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PorcProgr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescontoProgr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CompIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LimiteIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PorcIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescIrrf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CompInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Teto_FaixaInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PorcInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ParcDeduInss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FaixaParcDed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorFaixaParcDed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PorcParcDed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ParcelaDeduzir = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescontoParcDed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCalcProgre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvTbInss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvTbIrrf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvListParcDeduzir)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,6 +105,7 @@
             this.TxtSalario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtSalario.TextChanged += new System.EventHandler(this.TxtSalario_TextChanged);
             this.TxtSalario.Enter += new System.EventHandler(this.TxtSalario_Enter);
+            this.TxtSalario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtSalario_KeyDown);
             this.TxtSalario.Leave += new System.EventHandler(this.TxtSalario_Leave);
             // 
             // BtnCalcular
@@ -130,8 +139,187 @@
             this.DgvCalcProgre.Name = "DgvCalcProgre";
             this.DgvCalcProgre.ReadOnly = true;
             this.DgvCalcProgre.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvCalcProgre.Size = new System.Drawing.Size(478, 312);
+            this.DgvCalcProgre.Size = new System.Drawing.Size(478, 142);
             this.DgvCalcProgre.TabIndex = 3;
+            // 
+            // DgvTbInss
+            // 
+            this.DgvTbInss.AllowUserToAddRows = false;
+            this.DgvTbInss.AllowUserToDeleteRows = false;
+            this.DgvTbInss.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.DgvTbInss.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DgvTbInss.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvTbInss.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdInss,
+            this.CompInss,
+            this.FaixaInss,
+            this.Teto_FaixaInss,
+            this.PorcInss,
+            this.ParcDeduInss});
+            this.DgvTbInss.Location = new System.Drawing.Point(494, 32);
+            this.DgvTbInss.MultiSelect = false;
+            this.DgvTbInss.Name = "DgvTbInss";
+            this.DgvTbInss.ReadOnly = true;
+            this.DgvTbInss.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvTbInss.Size = new System.Drawing.Size(448, 205);
+            this.DgvTbInss.TabIndex = 4;
+            // 
+            // DgvTbIrrf
+            // 
+            this.DgvTbIrrf.AllowUserToAddRows = false;
+            this.DgvTbIrrf.AllowUserToDeleteRows = false;
+            this.DgvTbIrrf.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.DgvTbIrrf.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DgvTbIrrf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvTbIrrf.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdIrrf,
+            this.CompIrrf,
+            this.LimiteIrrf,
+            this.PorcIrrf,
+            this.DescIrrf});
+            this.DgvTbIrrf.Location = new System.Drawing.Point(494, 246);
+            this.DgvTbIrrf.MultiSelect = false;
+            this.DgvTbIrrf.Name = "DgvTbIrrf";
+            this.DgvTbIrrf.ReadOnly = true;
+            this.DgvTbIrrf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvTbIrrf.Size = new System.Drawing.Size(448, 205);
+            this.DgvTbIrrf.TabIndex = 4;
+            // 
+            // LblInfoCalcProgr
+            // 
+            this.LblInfoCalcProgr.AutoSize = true;
+            this.LblInfoCalcProgr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfoCalcProgr.Location = new System.Drawing.Point(12, 410);
+            this.LblInfoCalcProgr.Name = "LblInfoCalcProgr";
+            this.LblInfoCalcProgr.Size = new System.Drawing.Size(21, 20);
+            this.LblInfoCalcProgr.TabIndex = 7;
+            this.LblInfoCalcProgr.Text = "...";
+            // 
+            // LkLblCadTabela
+            // 
+            this.LkLblCadTabela.AutoSize = true;
+            this.LkLblCadTabela.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LkLblCadTabela.Location = new System.Drawing.Point(808, 8);
+            this.LkLblCadTabela.Name = "LkLblCadTabela";
+            this.LkLblCadTabela.Size = new System.Drawing.Size(134, 20);
+            this.LkLblCadTabela.TabIndex = 8;
+            this.LkLblCadTabela.TabStop = true;
+            this.LkLblCadTabela.Text = "Cadastro Tabelas";
+            this.LkLblCadTabela.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkLblCadTabela_LinkClicked);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(677, 513);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(168, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Desenvolvido por: Maycon Wisley";
+            // 
+            // LkLblProjetoGitHub
+            // 
+            this.LkLblProjetoGitHub.AutoSize = true;
+            this.LkLblProjetoGitHub.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LkLblProjetoGitHub.Location = new System.Drawing.Point(851, 513);
+            this.LkLblProjetoGitHub.Name = "LkLblProjetoGitHub";
+            this.LkLblProjetoGitHub.Size = new System.Drawing.Size(91, 13);
+            this.LkLblProjetoGitHub.TabIndex = 10;
+            this.LkLblProjetoGitHub.TabStop = true;
+            this.LkLblProjetoGitHub.Text = "Projeto no GitHub";
+            this.LkLblProjetoGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkLblProjetoGitHub_LinkClicked);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(11, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(147, 20);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Calculo Progressivo";
+            // 
+            // LblInfTabelas
+            // 
+            this.LblInfTabelas.AutoSize = true;
+            this.LblInfTabelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfTabelas.Location = new System.Drawing.Point(489, 454);
+            this.LblInfTabelas.Name = "LblInfTabelas";
+            this.LblInfTabelas.Size = new System.Drawing.Size(21, 20);
+            this.LblInfTabelas.TabIndex = 12;
+            this.LblInfTabelas.Text = "...";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(489, 8);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(163, 20);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Tabelas INSS e IRRF";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 25);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Nº Dependente";
+            // 
+            // TxtNumDep
+            // 
+            this.TxtNumDep.Location = new System.Drawing.Point(244, 71);
+            this.TxtNumDep.Name = "TxtNumDep";
+            this.TxtNumDep.Size = new System.Drawing.Size(63, 30);
+            this.TxtNumDep.TabIndex = 15;
+            this.TxtNumDep.Text = "0";
+            this.TxtNumDep.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtNumDep.TextChanged += new System.EventHandler(this.TxtNumDep_TextChanged);
+            this.TxtNumDep.Enter += new System.EventHandler(this.TxtNumDep_Enter);
+            this.TxtNumDep.Leave += new System.EventHandler(this.TxtNumDep_Leave);
+            // 
+            // LkLblAtualizarTabelas
+            // 
+            this.LkLblAtualizarTabelas.AutoSize = true;
+            this.LkLblAtualizarTabelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LkLblAtualizarTabelas.Location = new System.Drawing.Point(756, 457);
+            this.LkLblAtualizarTabelas.Name = "LkLblAtualizarTabelas";
+            this.LkLblAtualizarTabelas.Size = new System.Drawing.Size(186, 17);
+            this.LkLblAtualizarTabelas.TabIndex = 16;
+            this.LkLblAtualizarTabelas.TabStop = true;
+            this.LkLblAtualizarTabelas.Text = "Atualizar Grid\'s INSS e IRRF";
+            this.LkLblAtualizarTabelas.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkLblAtualizarTabelas_LinkClicked);
+            // 
+            // DgvListParcDeduzir
+            // 
+            this.DgvListParcDeduzir.AllowUserToAddRows = false;
+            this.DgvListParcDeduzir.AllowUserToDeleteRows = false;
+            this.DgvListParcDeduzir.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.DgvListParcDeduzir.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DgvListParcDeduzir.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvListParcDeduzir.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FaixaParcDed,
+            this.ValorFaixaParcDed,
+            this.PorcParcDed,
+            this.ParcelaDeduzir,
+            this.DescontoParcDed});
+            this.DgvListParcDeduzir.Location = new System.Drawing.Point(10, 307);
+            this.DgvListParcDeduzir.Name = "DgvListParcDeduzir";
+            this.DgvListParcDeduzir.ReadOnly = true;
+            this.DgvListParcDeduzir.Size = new System.Drawing.Size(478, 100);
+            this.DgvListParcDeduzir.TabIndex = 17;
+            // 
+            // LblInfoCalcProgre1
+            // 
+            this.LblInfoCalcProgre1.AutoSize = true;
+            this.LblInfoCalcProgre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfoCalcProgre1.Location = new System.Drawing.Point(11, 284);
+            this.LblInfoCalcProgre1.Name = "LblInfoCalcProgre1";
+            this.LblInfoCalcProgre1.Size = new System.Drawing.Size(177, 20);
+            this.LblInfoCalcProgre1.TabIndex = 18;
+            this.LblInfoCalcProgre1.Text = "Calculo Parcela Deduzir";
             // 
             // FaixaProgr
             // 
@@ -162,10 +350,10 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle2.Format = "N2";
             this.PorcProgr.DefaultCellStyle = dataGridViewCellStyle2;
-            this.PorcProgr.HeaderText = "Porcentagem";
+            this.PorcProgr.HeaderText = "%";
             this.PorcProgr.Name = "PorcProgr";
             this.PorcProgr.ReadOnly = true;
-            this.PorcProgr.Width = 153;
+            this.PorcProgr.Width = 55;
             // 
             // DescontoProgr
             // 
@@ -179,27 +367,60 @@
             this.DescontoProgr.ReadOnly = true;
             this.DescontoProgr.Width = 120;
             // 
-            // DgvTbInss
+            // IdIrrf
             // 
-            this.DgvTbInss.AllowUserToAddRows = false;
-            this.DgvTbInss.AllowUserToDeleteRows = false;
-            this.DgvTbInss.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.DgvTbInss.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.DgvTbInss.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvTbInss.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdInss,
-            this.CompInss,
-            this.FaixaInss,
-            this.Teto_FaixaInss,
-            this.PorcInss,
-            this.ParcDeduInss});
-            this.DgvTbInss.Location = new System.Drawing.Point(494, 32);
-            this.DgvTbInss.MultiSelect = false;
-            this.DgvTbInss.Name = "DgvTbInss";
-            this.DgvTbInss.ReadOnly = true;
-            this.DgvTbInss.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvTbInss.Size = new System.Drawing.Size(448, 205);
-            this.DgvTbInss.TabIndex = 4;
+            this.IdIrrf.DataPropertyName = "Id";
+            this.IdIrrf.HeaderText = "Id";
+            this.IdIrrf.Name = "IdIrrf";
+            this.IdIrrf.ReadOnly = true;
+            this.IdIrrf.Visible = false;
+            // 
+            // CompIrrf
+            // 
+            this.CompIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CompIrrf.DataPropertyName = "Competencia";
+            dataGridViewCellStyle9.Format = "MM/yyyy";
+            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle9;
+            this.CompIrrf.HeaderText = "Competencia";
+            this.CompIrrf.Name = "CompIrrf";
+            this.CompIrrf.ReadOnly = true;
+            this.CompIrrf.Width = 153;
+            // 
+            // LimiteIrrf
+            // 
+            this.LimiteIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.LimiteIrrf.DataPropertyName = "Limite";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle10.Format = "N2";
+            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle10;
+            this.LimiteIrrf.HeaderText = "Limite";
+            this.LimiteIrrf.Name = "LimiteIrrf";
+            this.LimiteIrrf.ReadOnly = true;
+            this.LimiteIrrf.Width = 88;
+            // 
+            // PorcIrrf
+            // 
+            this.PorcIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.PorcIrrf.DataPropertyName = "Porcentagem";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Format = "N2";
+            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle11;
+            this.PorcIrrf.HeaderText = "%";
+            this.PorcIrrf.Name = "PorcIrrf";
+            this.PorcIrrf.ReadOnly = true;
+            this.PorcIrrf.Width = 55;
+            // 
+            // DescIrrf
+            // 
+            this.DescIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.DescIrrf.DataPropertyName = "Desconto";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle12.Format = "N2";
+            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle12;
+            this.DescIrrf.HeaderText = "Desconto";
+            this.DescIrrf.Name = "DescIrrf";
+            this.DescIrrf.ReadOnly = true;
+            this.DescIrrf.Width = 120;
             // 
             // IdInss
             // 
@@ -251,10 +472,10 @@
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle7.Format = "N2";
             this.PorcInss.DefaultCellStyle = dataGridViewCellStyle7;
-            this.PorcInss.HeaderText = "Porcentagem";
+            this.PorcInss.HeaderText = "%";
             this.PorcInss.Name = "PorcInss";
             this.PorcInss.ReadOnly = true;
-            this.PorcInss.Width = 153;
+            this.PorcInss.Width = 55;
             // 
             // ParcDeduInss
             // 
@@ -268,186 +489,48 @@
             this.ParcDeduInss.ReadOnly = true;
             this.ParcDeduInss.Width = 181;
             // 
-            // DgvTbIrrf
+            // FaixaParcDed
             // 
-            this.DgvTbIrrf.AllowUserToAddRows = false;
-            this.DgvTbIrrf.AllowUserToDeleteRows = false;
-            this.DgvTbIrrf.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.DgvTbIrrf.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.DgvTbIrrf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvTbIrrf.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdIrrf,
-            this.CompIrrf,
-            this.LimiteIrrf,
-            this.PorcIrrf,
-            this.DescIrrf});
-            this.DgvTbIrrf.Location = new System.Drawing.Point(494, 246);
-            this.DgvTbIrrf.MultiSelect = false;
-            this.DgvTbIrrf.Name = "DgvTbIrrf";
-            this.DgvTbIrrf.ReadOnly = true;
-            this.DgvTbIrrf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvTbIrrf.Size = new System.Drawing.Size(448, 205);
-            this.DgvTbIrrf.TabIndex = 4;
+            this.FaixaParcDed.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.FaixaParcDed.DataPropertyName = "Faixa";
+            this.FaixaParcDed.HeaderText = "Faixa";
+            this.FaixaParcDed.Name = "FaixaParcDed";
+            this.FaixaParcDed.ReadOnly = true;
+            this.FaixaParcDed.Width = 85;
             // 
-            // IdIrrf
+            // ValorFaixaParcDed
             // 
-            this.IdIrrf.DataPropertyName = "Id";
-            this.IdIrrf.HeaderText = "Id";
-            this.IdIrrf.Name = "IdIrrf";
-            this.IdIrrf.ReadOnly = true;
-            this.IdIrrf.Visible = false;
+            this.ValorFaixaParcDed.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ValorFaixaParcDed.DataPropertyName = "Valor_Faixa";
+            this.ValorFaixaParcDed.HeaderText = "Valor_Faixa";
+            this.ValorFaixaParcDed.Name = "ValorFaixaParcDed";
+            this.ValorFaixaParcDed.ReadOnly = true;
+            this.ValorFaixaParcDed.Width = 142;
             // 
-            // CompIrrf
+            // PorcParcDed
             // 
-            this.CompIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CompIrrf.DataPropertyName = "Competencia";
-            dataGridViewCellStyle9.Format = "MM/yyyy";
-            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle9;
-            this.CompIrrf.HeaderText = "Competencia";
-            this.CompIrrf.Name = "CompIrrf";
-            this.CompIrrf.ReadOnly = true;
-            this.CompIrrf.Width = 153;
+            this.PorcParcDed.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.PorcParcDed.DataPropertyName = "Porcentagem";
+            this.PorcParcDed.HeaderText = "%";
+            this.PorcParcDed.Name = "PorcParcDed";
+            this.PorcParcDed.ReadOnly = true;
+            this.PorcParcDed.Width = 55;
             // 
-            // LimiteIrrf
+            // ParcelaDeduzir
             // 
-            this.LimiteIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.LimiteIrrf.DataPropertyName = "Limite";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.Format = "N2";
-            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle10;
-            this.LimiteIrrf.HeaderText = "Limite";
-            this.LimiteIrrf.Name = "LimiteIrrf";
-            this.LimiteIrrf.ReadOnly = true;
-            this.LimiteIrrf.Width = 88;
+            this.ParcelaDeduzir.DataPropertyName = "Parcela";
+            this.ParcelaDeduzir.HeaderText = "Parcela";
+            this.ParcelaDeduzir.Name = "ParcelaDeduzir";
+            this.ParcelaDeduzir.ReadOnly = true;
             // 
-            // PorcIrrf
+            // DescontoParcDed
             // 
-            this.PorcIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.PorcIrrf.DataPropertyName = "Porcentagem";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle11.Format = "N2";
-            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle11;
-            this.PorcIrrf.HeaderText = "Porcentagem";
-            this.PorcIrrf.Name = "PorcIrrf";
-            this.PorcIrrf.ReadOnly = true;
-            this.PorcIrrf.Width = 153;
-            // 
-            // DescIrrf
-            // 
-            this.DescIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.DescIrrf.DataPropertyName = "Desconto";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle12.Format = "N2";
-            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle12;
-            this.DescIrrf.HeaderText = "Desconto";
-            this.DescIrrf.Name = "DescIrrf";
-            this.DescIrrf.ReadOnly = true;
-            this.DescIrrf.Width = 120;
-            // 
-            // LblInfoCalcProgr
-            // 
-            this.LblInfoCalcProgr.AutoSize = true;
-            this.LblInfoCalcProgr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblInfoCalcProgr.Location = new System.Drawing.Point(12, 454);
-            this.LblInfoCalcProgr.Name = "LblInfoCalcProgr";
-            this.LblInfoCalcProgr.Size = new System.Drawing.Size(21, 20);
-            this.LblInfoCalcProgr.TabIndex = 7;
-            this.LblInfoCalcProgr.Text = "...";
-            // 
-            // LkLblCadTabela
-            // 
-            this.LkLblCadTabela.AutoSize = true;
-            this.LkLblCadTabela.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LkLblCadTabela.Location = new System.Drawing.Point(808, 8);
-            this.LkLblCadTabela.Name = "LkLblCadTabela";
-            this.LkLblCadTabela.Size = new System.Drawing.Size(134, 20);
-            this.LkLblCadTabela.TabIndex = 8;
-            this.LkLblCadTabela.TabStop = true;
-            this.LkLblCadTabela.Text = "Cadastro Tabelas";
-            this.LkLblCadTabela.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkLblCadTabela_LinkClicked);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(774, 500);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Desenvolvido por: Maycon Wisley";
-            // 
-            // LkLblProjetoGitHub
-            // 
-            this.LkLblProjetoGitHub.AutoSize = true;
-            this.LkLblProjetoGitHub.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LkLblProjetoGitHub.Location = new System.Drawing.Point(851, 513);
-            this.LkLblProjetoGitHub.Name = "LkLblProjetoGitHub";
-            this.LkLblProjetoGitHub.Size = new System.Drawing.Size(91, 13);
-            this.LkLblProjetoGitHub.TabIndex = 10;
-            this.LkLblProjetoGitHub.TabStop = true;
-            this.LkLblProjetoGitHub.Text = "Projeto no GitHub";
-            this.LkLblProjetoGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkLblProjetoGitHub_LinkClicked);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 111);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(186, 25);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Calculo Progressivo";
-            // 
-            // LblInfTabelas
-            // 
-            this.LblInfTabelas.AutoSize = true;
-            this.LblInfTabelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblInfTabelas.Location = new System.Drawing.Point(489, 454);
-            this.LblInfTabelas.Name = "LblInfTabelas";
-            this.LblInfTabelas.Size = new System.Drawing.Size(21, 20);
-            this.LblInfTabelas.TabIndex = 12;
-            this.LblInfTabelas.Text = "...";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(489, 8);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(199, 25);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Tabelas INSS e IRRF";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 25);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Nº Dependente";
-            // 
-            // TxtNumDep
-            // 
-            this.TxtNumDep.Location = new System.Drawing.Point(244, 71);
-            this.TxtNumDep.Name = "TxtNumDep";
-            this.TxtNumDep.Size = new System.Drawing.Size(63, 30);
-            this.TxtNumDep.TabIndex = 15;
-            this.TxtNumDep.Text = "0";
-            this.TxtNumDep.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TxtNumDep.TextChanged += new System.EventHandler(this.TxtNumDep_TextChanged);
-            this.TxtNumDep.Enter += new System.EventHandler(this.TxtNumDep_Enter);
-            this.TxtNumDep.Leave += new System.EventHandler(this.TxtNumDep_Leave);
-            // 
-            // LkLblAtualizarTabelas
-            // 
-            this.LkLblAtualizarTabelas.AutoSize = true;
-            this.LkLblAtualizarTabelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LkLblAtualizarTabelas.Location = new System.Drawing.Point(829, 454);
-            this.LkLblAtualizarTabelas.Name = "LkLblAtualizarTabelas";
-            this.LkLblAtualizarTabelas.Size = new System.Drawing.Size(113, 17);
-            this.LkLblAtualizarTabelas.TabIndex = 16;
-            this.LkLblAtualizarTabelas.TabStop = true;
-            this.LkLblAtualizarTabelas.Text = "Atualizar tabelas";
-            this.LkLblAtualizarTabelas.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkLblAtualizarTabelas_LinkClicked);
+            this.DescontoParcDed.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.DescontoParcDed.DataPropertyName = "Desconto";
+            this.DescontoParcDed.HeaderText = "Desconto";
+            this.DescontoParcDed.Name = "DescontoParcDed";
+            this.DescontoParcDed.ReadOnly = true;
+            this.DescontoParcDed.Width = 120;
             // 
             // FrmPrincipalCalcInss
             // 
@@ -455,6 +538,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(954, 535);
+            this.Controls.Add(this.LblInfoCalcProgre1);
+            this.Controls.Add(this.DgvListParcDeduzir);
             this.Controls.Add(this.LkLblAtualizarTabelas);
             this.Controls.Add(this.TxtNumDep);
             this.Controls.Add(this.label2);
@@ -474,6 +559,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -481,9 +567,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora INSS 2020";
             this.Load += new System.EventHandler(this.FrmPrincipalCalcInss_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FrmPrincipalCalcInss_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.DgvCalcProgre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvTbInss)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvTbIrrf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvListParcDeduzir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -504,24 +592,31 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label LblInfTabelas;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdIrrf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CompIrrf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LimiteIrrf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PorcIrrf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DescIrrf;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox TxtNumDep;
+        private System.Windows.Forms.LinkLabel LkLblAtualizarTabelas;
+        private System.Windows.Forms.DataGridView DgvListParcDeduzir;
+        private System.Windows.Forms.Label LblInfoCalcProgre1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FaixaProgr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valor_FaixaProgr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PorcProgr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescontoProgr;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdInss;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompInss;
         private System.Windows.Forms.DataGridViewTextBoxColumn FaixaInss;
         private System.Windows.Forms.DataGridViewTextBoxColumn Teto_FaixaInss;
         private System.Windows.Forms.DataGridViewTextBoxColumn PorcInss;
         private System.Windows.Forms.DataGridViewTextBoxColumn ParcDeduInss;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FaixaProgr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Valor_FaixaProgr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PorcProgr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DescontoProgr;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtNumDep;
-        private System.Windows.Forms.LinkLabel LkLblAtualizarTabelas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdIrrf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CompIrrf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LimiteIrrf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PorcIrrf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescIrrf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FaixaParcDed;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValorFaixaParcDed;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PorcParcDed;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ParcelaDeduzir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescontoParcDed;
     }
 }
 

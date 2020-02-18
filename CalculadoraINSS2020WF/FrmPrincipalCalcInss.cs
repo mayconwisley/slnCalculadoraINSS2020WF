@@ -30,14 +30,28 @@ namespace CalculadoraINSS2020WF
                 int numFaixa = int.Parse(faixa.ToString());
                 int numDep = int.Parse(TxtNumDep.Text.Trim());
 
-                decimal valDescInss = Negocio.Calculos.CalculoInssParcelaDeduzir.ValorContribuicaoFaixa(valBase, numFaixa);
-                decimal valDescIrrf = Negocio.Calculos.CalculoIrrf.DescontoIrrf(numDep, valBase, valDescInss, valValorDependente);
+                decimal valDescInss = Math.Round(Negocio.Calculos.CalculoInssParcelaDeduzir.ValorContribuicaoFaixa(valBase, numFaixa), 2);
+                decimal valDescIrrf = Math.Round(Negocio.Calculos.CalculoIrrf.DescontoIrrf(numDep, valBase, valDescInss, valValorDependente), 2);
+                decimal valDescProg = 0;
 
-                decimal valSalarioLiquido = Negocio.Calculos.CalculoSalarioLiquido.SalarioLiquido(valBase, valDescInss, valDescIrrf);
+                if (valDescIrrf < 0)
+                {
+                    valDescIrrf = 0;
+                }
+
+                decimal valSalarioLiquido = Math.Round(Negocio.Calculos.CalculoSalarioLiquido.SalarioLiquido(valBase, valDescInss, valDescIrrf), 2);
 
                 DgvCalcProgre.DataSource = Negocio.Calculos.CalculoInssProgressao.CalculoProgressao(valBase);
 
-                LblInfoCalcProgr.Text = "Desconto INSS: " + valDescInss.ToString("#,##0.00") +
+                foreach (DataGridViewRow item in DgvCalcProgre.Rows)
+                {
+                    valDescProg += decimal.Parse(item.Cells["DescontoProgr"].Value.ToString());
+                }
+
+                DgvListParcDeduzir.DataSource = Negocio.Calculos.CalculoInssParcelaDeduzir.ValorContribuicaoFaixaGrid(valBase, numFaixa);
+
+                LblInfoCalcProgr.Text = "Desc. INSS Progressiva: " + valDescProg.ToString("#,##0.00") +
+                                        "\nDesc. INSS Parc. Deduzir: " + valDescInss.ToString("#,##0.00") +
                                         "\nDesconto IRRF: " + valDescIrrf.ToString("#,##0.00") +
                                         "\nSalário Líquido: " + valSalarioLiquido.ToString("#,##0.00");
             }
@@ -116,6 +130,26 @@ namespace CalculadoraINSS2020WF
         {
 
             System.Diagnostics.Process.Start("https://github.com/mayconwisley/slnCalculadoraINSS2020WF");
+        }
+
+        private void TxtSalario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                decimal valBase = decimal.Parse(TxtSalario.Text.Trim());
+                Calculo(valBase);
+            }
+        }
+
+        private void FrmPrincipalCalcInss_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //***** Ao pressionar Enter, muda de TextBox SEM O SOM*****//
+            //***** KeyPreview = true na propriedade do FORM *****//
+            if (e.KeyChar == 13)
+            {
+                this.ProcessTabKey(true);
+                e.Handled = true;
+            }
         }
 
         private void TxtSalario_Leave(object sender, EventArgs e)

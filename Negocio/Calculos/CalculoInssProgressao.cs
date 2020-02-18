@@ -25,13 +25,11 @@ namespace Negocio.Calculos
                 dtCalcProgressao.Columns.Add("Porcentagem");
                 dtCalcProgressao.Columns.Add("Desconto");
 
-
                 for (int i = 1; i <= numFaixa; i++)
                 {
                     valPorcFaixa = Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(i);
                     valFaixaTeto = Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(i);
                     valFaixaTeto1 = Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(i - 1);
-
 
                     if (valFaixaTeto > valBase)
                     {
@@ -42,7 +40,6 @@ namespace Negocio.Calculos
                     valDesconto = Math.Round(valFaixaTeto1 * (valPorcFaixa / 100), 2);
 
                     dtCalcProgressao.Rows.Add(i, valFaixaTeto1.ToString("#,##0.00"), valPorcFaixa.ToString("#,##0.00"), valDesconto.ToString("#,##0.00"));
-
                 }
                 return dtCalcProgressao;
             }
@@ -50,10 +47,6 @@ namespace Negocio.Calculos
             {
                 throw new Exception(ex.Message);
             }
-
-
-
         }
-
     }
 }

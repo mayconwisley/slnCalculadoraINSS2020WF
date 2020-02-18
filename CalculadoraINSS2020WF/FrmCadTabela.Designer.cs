@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabControle = new System.Windows.Forms.TabControl();
             this.TbPgSalMin = new System.Windows.Forms.TabPage();
             this.PnlSalMin = new System.Windows.Forms.Panel();
@@ -198,9 +198,9 @@
             // 
             this.CompSalMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompSalMin.DataPropertyName = "Competencia";
-            dataGridViewCellStyle55.Format = "MM/yyyy";
-            dataGridViewCellStyle55.NullValue = null;
-            this.CompSalMin.DefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle14.Format = "MM/yyyy";
+            dataGridViewCellStyle14.NullValue = null;
+            this.CompSalMin.DefaultCellStyle = dataGridViewCellStyle14;
             this.CompSalMin.HeaderText = "Competência";
             this.CompSalMin.Name = "CompSalMin";
             this.CompSalMin.ReadOnly = true;
@@ -210,10 +210,10 @@
             // 
             this.SalarioSalMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.SalarioSalMin.DataPropertyName = "Salario";
-            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle56.Format = "N2";
-            dataGridViewCellStyle56.NullValue = null;
-            this.SalarioSalMin.DefaultCellStyle = dataGridViewCellStyle56;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle15.Format = "N2";
+            dataGridViewCellStyle15.NullValue = null;
+            this.SalarioSalMin.DefaultCellStyle = dataGridViewCellStyle15;
             this.SalarioSalMin.HeaderText = "Salário";
             this.SalarioSalMin.Name = "SalarioSalMin";
             this.SalarioSalMin.ReadOnly = true;
@@ -425,8 +425,8 @@
             // 
             this.CompInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompInss.DataPropertyName = "Competencia";
-            dataGridViewCellStyle57.Format = "MM/yyyy";
-            this.CompInss.DefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle16.Format = "MM/yyyy";
+            this.CompInss.DefaultCellStyle = dataGridViewCellStyle16;
             this.CompInss.HeaderText = "Competência";
             this.CompInss.Name = "CompInss";
             this.CompInss.ReadOnly = true;
@@ -436,8 +436,8 @@
             // 
             this.FaixaInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.FaixaInss.DataPropertyName = "Faixa";
-            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.FaixaInss.DefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.FaixaInss.DefaultCellStyle = dataGridViewCellStyle17;
             this.FaixaInss.HeaderText = "Faixa";
             this.FaixaInss.Name = "FaixaInss";
             this.FaixaInss.ReadOnly = true;
@@ -447,10 +447,10 @@
             // 
             this.TetoFaixaInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.TetoFaixaInss.DataPropertyName = "Teto_Faixa";
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle59.Format = "N2";
-            dataGridViewCellStyle59.NullValue = null;
-            this.TetoFaixaInss.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle18.Format = "N2";
+            dataGridViewCellStyle18.NullValue = null;
+            this.TetoFaixaInss.DefaultCellStyle = dataGridViewCellStyle18;
             this.TetoFaixaInss.HeaderText = "Teto_Faixa";
             this.TetoFaixaInss.Name = "TetoFaixaInss";
             this.TetoFaixaInss.ReadOnly = true;
@@ -460,9 +460,9 @@
             // 
             this.PorcInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.PorcInss.DataPropertyName = "Porcentagem";
-            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle60.Format = "N2";
-            this.PorcInss.DefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle19.Format = "N2";
+            this.PorcInss.DefaultCellStyle = dataGridViewCellStyle19;
             this.PorcInss.HeaderText = "%";
             this.PorcInss.Name = "PorcInss";
             this.PorcInss.ReadOnly = true;
@@ -472,9 +472,9 @@
             // 
             this.ParcDeduInss.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ParcDeduInss.DataPropertyName = "Parcela_Deduzir";
-            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle61.Format = "N2";
-            this.ParcDeduInss.DefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle20.Format = "N2";
+            this.ParcDeduInss.DefaultCellStyle = dataGridViewCellStyle20;
             this.ParcDeduInss.HeaderText = "Parcela_Deduzir";
             this.ParcDeduInss.Name = "ParcDeduInss";
             this.ParcDeduInss.ReadOnly = true;
@@ -684,8 +684,8 @@
             // 
             this.CompIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompIrrf.DataPropertyName = "Competencia";
-            dataGridViewCellStyle62.Format = "MM/yyyy";
-            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle21.Format = "MM/yyyy";
+            this.CompIrrf.DefaultCellStyle = dataGridViewCellStyle21;
             this.CompIrrf.HeaderText = "Competência";
             this.CompIrrf.Name = "CompIrrf";
             this.CompIrrf.ReadOnly = true;
@@ -695,9 +695,9 @@
             // 
             this.LimiteIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.LimiteIrrf.DataPropertyName = "Limite";
-            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle63.Format = "N2";
-            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle22.Format = "N2";
+            this.LimiteIrrf.DefaultCellStyle = dataGridViewCellStyle22;
             this.LimiteIrrf.HeaderText = "Limite";
             this.LimiteIrrf.Name = "LimiteIrrf";
             this.LimiteIrrf.ReadOnly = true;
@@ -707,9 +707,9 @@
             // 
             this.PorcIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.PorcIrrf.DataPropertyName = "Porcentagem";
-            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle64.Format = "N2";
-            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle23.Format = "N2";
+            this.PorcIrrf.DefaultCellStyle = dataGridViewCellStyle23;
             this.PorcIrrf.HeaderText = "%";
             this.PorcIrrf.Name = "PorcIrrf";
             this.PorcIrrf.ReadOnly = true;
@@ -719,9 +719,9 @@
             // 
             this.DescIrrf.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.DescIrrf.DataPropertyName = "Desconto";
-            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle65.Format = "N2";
-            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle24.Format = "N2";
+            this.DescIrrf.DefaultCellStyle = dataGridViewCellStyle24;
             this.DescIrrf.HeaderText = "Desconto";
             this.DescIrrf.Name = "DescIrrf";
             this.DescIrrf.ReadOnly = true;
@@ -866,8 +866,8 @@
             // 
             this.CompDep.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.CompDep.DataPropertyName = "Competencia";
-            dataGridViewCellStyle53.Format = "MM/yyyy";
-            this.CompDep.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle25.Format = "MM/yyyy";
+            this.CompDep.DefaultCellStyle = dataGridViewCellStyle25;
             this.CompDep.HeaderText = "Competência";
             this.CompDep.Name = "CompDep";
             this.CompDep.ReadOnly = true;
@@ -876,9 +876,9 @@
             // ValorDep
             // 
             this.ValorDep.DataPropertyName = "Valor";
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle54.Format = "N2";
-            this.ValorDep.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle26.Format = "N2";
+            this.ValorDep.DefaultCellStyle = dataGridViewCellStyle26;
             this.ValorDep.HeaderText = "Valor";
             this.ValorDep.Name = "ValorDep";
             this.ValorDep.ReadOnly = true;
@@ -995,6 +995,7 @@
             this.Controls.Add(this.TabControle);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -1004,6 +1005,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Tabelas";
             this.Load += new System.EventHandler(this.FrmCadTabela_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FrmCadTabela_KeyPress);
             this.TabControle.ResumeLayout(false);
             this.TbPgSalMin.ResumeLayout(false);
             this.PnlSalMin.ResumeLayout(false);
