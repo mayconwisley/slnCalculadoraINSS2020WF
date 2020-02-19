@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Negocio.Calculos
 {
     public static class CalculoIrrf
     {
-        public static decimal DescontoIrrf(int dep, decimal valBase, decimal valInss, decimal valDep)
+        public static decimal DescontoIrrf(DateTime dtCompetencia, int dep, decimal valBase, decimal valInss, decimal valDep)
         {
-            decimal valAliquita = Negocio.IRRF.ListaPorceIrrfValBase.PorcemtagemIRRF(valBase);
-            decimal valDesconto = Negocio.IRRF.ListaParceDeduzirIrrf.DescontoIRRF(valBase);
+            decimal valAliquita = Negocio.IRRF.ListaPorceIrrfValBase.PorcemtagemIRRF(dtCompetencia,valBase);
+            decimal valDesconto = Negocio.IRRF.ListaParceDeduzirIrrf.DescontoIRRF(dtCompetencia, valBase);
 
             decimal valBaseIrrf = 0, valDescontoIrrf = 0;
 

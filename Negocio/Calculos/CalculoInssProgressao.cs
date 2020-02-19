@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Negocio.Calculos
 {
@@ -11,13 +7,13 @@ namespace Negocio.Calculos
     {
 
         /*Calculo do INSS em forma de Progessão*/
-        public static DataTable CalculoProgressao(decimal valBase)
+        public static DataTable CalculoProgressao(DateTime dtCompetencia, decimal valBase)
         {
             decimal valPorcFaixa = 0, numFaixa = 0, valFaixaTeto = 0, valDesconto = 0, valBaseBkp = 0, valFaixaTeto1 = 0;
             DataTable dtCalcProgressao;
             try
             {
-                numFaixa = Negocio.INSS.ListarFaixaTeto.Faixa(valBase);
+                numFaixa = Negocio.INSS.ListarFaixaTeto.Faixa(dtCompetencia, valBase);
                 valBaseBkp = valBase;
                 dtCalcProgressao = new DataTable();
                 dtCalcProgressao.Columns.Add("Faixa");
@@ -27,9 +23,9 @@ namespace Negocio.Calculos
 
                 for (int i = 1; i <= numFaixa; i++)
                 {
-                    valPorcFaixa = Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(i);
-                    valFaixaTeto = Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(i);
-                    valFaixaTeto1 = Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(i - 1);
+                    valPorcFaixa = Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(dtCompetencia, i);
+                    valFaixaTeto = Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(dtCompetencia, i);
+                    valFaixaTeto1 = Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(dtCompetencia, i - 1);
 
                     if (valFaixaTeto > valBase)
                     {

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Negocio.IRRF
 {
-   public static class Excluir
+    public static class Excluir
     {
         static CRUD Crud;
         static StringBuilder SQL = null;

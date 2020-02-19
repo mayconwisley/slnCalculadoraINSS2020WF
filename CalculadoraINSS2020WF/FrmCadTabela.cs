@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Negocio.Utilitarios;
+﻿using Negocio.Utilitarios;
 using Objetos;
+using System;
+using System.Windows.Forms;
 namespace CalculadoraINSS2020WF
 {
     public partial class FrmCadTabela : Form
@@ -91,12 +84,13 @@ namespace CalculadoraINSS2020WF
             inssObj = new INSSObj();
             try
             {
+                DateTime dtComeptencia = DateTime.Parse(MktCompInss.Text.Trim());
                 inssObj.Id = inssId;
-                inssObj.Competencia = DateTime.Parse(MktCompInss.Text.Trim());
+                inssObj.Competencia = dtComeptencia;
                 inssObj.Faixa = int.Parse(TxtFaixaInss.Text.Trim());
                 inssObj.Teto_Faixa = decimal.Parse(TxtTetoFaixaInss.Text.Trim());
                 inssObj.Porcentagem = decimal.Parse(TxtPorcInss.Text.Trim());
-                inssObj.Parcela_Deduzir = Math.Round(Negocio.Calculos.CalculoParcelaDeduzir.CalcParcDeduzir(int.Parse(TxtFaixaInss.Text.Trim()), decimal.Parse(TxtPorcInss.Text.Trim())), 2);
+                inssObj.Parcela_Deduzir = Math.Round(Negocio.Calculos.CalculoParcelaDeduzir.CalcParcDeduzir(dtComeptencia, int.Parse(TxtFaixaInss.Text.Trim()), decimal.Parse(TxtPorcInss.Text.Trim())), 2);
                 switch (opcCadastro)
                 {
                     case OpcCadastro.Gravar:

@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Negocio.Calculos
 {
     public static class CalculoInssParcelaDeduzir
     {
         /*Calculo do desconto com parcela a deduzir*/
-        public static decimal ValorContribuicaoFaixa(decimal valBase, int faixa)
+        public static decimal ValorContribuicaoFaixa(DateTime dtCompetencia, decimal valBase, int faixa)
         {
-            decimal valParcelaDeduzi = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(faixa), 2);
-            decimal valPercentualFaixa = Math.Round(Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(faixa), 2);
-            decimal valTetoInss = Math.Round(Negocio.INSS.ListarTeto.Teto(), 2);
+            decimal valParcelaDeduzi = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(dtCompetencia,faixa), 2);
+            decimal valPercentualFaixa = Math.Round(Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(dtCompetencia, faixa), 2);
+            decimal valTetoInss = Math.Round(Negocio.INSS.ListarTeto.Teto(dtCompetencia), 2);
 
             if (valBase > valTetoInss)
             {
@@ -25,12 +21,12 @@ namespace Negocio.Calculos
             return valContribuicao;
         }
 
-        public static DataTable ValorContribuicaoFaixaGrid(decimal valBase, int faixa)
+        public static DataTable ValorContribuicaoFaixaGrid(DateTime dtCompetencia, decimal valBase, int faixa)
         {
-            decimal valParcelaDeduzi = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(faixa), 2);
-            decimal valPercentualFaixa = Math.Round(Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(faixa), 2);
-            decimal valTetoInss = Math.Round(Negocio.INSS.ListarTeto.Teto(), 2);
-            decimal valFaixaTeto = Math.Round(Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(faixa), 2);
+            decimal valParcelaDeduzi = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(dtCompetencia,faixa), 2);
+            decimal valPercentualFaixa = Math.Round(Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(dtCompetencia,faixa), 2);
+            decimal valTetoInss = Math.Round(Negocio.INSS.ListarTeto.Teto(dtCompetencia), 2);
+            decimal valFaixaTeto = Math.Round(Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(dtCompetencia,faixa), 2);
             decimal valBaseBkp = 0;
             DataTable dtCalcProgressao;
             try

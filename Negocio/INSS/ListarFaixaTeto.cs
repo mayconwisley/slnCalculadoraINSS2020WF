@@ -1,10 +1,7 @@
 ﻿using BancoDados;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Negocio.INSS
 {
@@ -13,13 +10,14 @@ namespace Negocio.INSS
         static CRUD Crud;
         static StringBuilder SQL = null;
 
-        public static decimal Faixa(decimal valBase)
+        public static decimal Faixa(DateTime dtCompetencia, decimal valBase)
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
             SQL.Append("SELECT Faixa ");
             SQL.Append("FROM Inss ");
             SQL.Append("WHERE Teto_Faixa >= @valBase ");
+            SQL.Append("AND Competencia >= @Competencia ");
             SQL.Append("ORDER BY Teto_Faixa ASC ");
             SQL.Append("LIMIT 1");
 
@@ -27,12 +25,13 @@ namespace Negocio.INSS
             {
                 Crud.LimparParametro();
                 Crud.AdicionarParamentro("valBase", valBase);
+                Crud.AdicionarParamentro("Competencia", dtCompetencia);
                 int numFaixa = int.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
                 return numFaixa;
             }
             catch (Exception ex)
             {
-                return Negocio.INSS.ListaUltimaFaixaTeto.FaixaTeto();
+                return Negocio.INSS.ListaUltimaFaixaTeto.FaixaTeto(dtCompetencia);
                 throw new Exception(ex.Message);
             }
         }

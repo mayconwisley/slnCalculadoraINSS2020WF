@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BancoDados;
 namespace Negocio.Calculos
 {
     public static class CalculoParcelaDeduzir
     {
         /*Selecionar a faixa anterior*/
-        public static decimal CalcParcDeduzir(int valFaixa, decimal decPorcentagem)
+        public static decimal CalcParcDeduzir(DateTime dtCompetencia, int valFaixa, decimal decPorcentagem)
         {
             try
             {
@@ -22,11 +17,11 @@ namespace Negocio.Calculos
                 else
                 {
                     valDiferenca = decPorcentagem -
-                                   Math.Round(Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(valFaixa - 1), 2);
+                                   Math.Round(Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(dtCompetencia, valFaixa - 1), 2);
                 }
 
-                valFaixaTeto = Math.Round(Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(valFaixa - 1), 2);
-                valParceDeduzir = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(valFaixa - 1), 2);
+                valFaixaTeto = Math.Round(Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(dtCompetencia, valFaixa - 1), 2);
+                valParceDeduzir = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(dtCompetencia, valFaixa - 1), 2);
 
                 valCalcParcDeduzir = Math.Round(valFaixaTeto * (valDiferenca / 100) + valParceDeduzir, 5);
 

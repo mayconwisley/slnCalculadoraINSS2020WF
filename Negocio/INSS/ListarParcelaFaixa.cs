@@ -1,10 +1,7 @@
 ﻿using BancoDados;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Negocio.INSS
 {
@@ -13,18 +10,20 @@ namespace Negocio.INSS
         static CRUD Crud;
         static StringBuilder SQL = null;
 
-        public static Decimal ParcelaDeduzir(int faixa)
+        public static Decimal ParcelaDeduzir(DateTime dtCompetencia, int faixa)
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
             SQL.Append("SELECT  Parcela_Deduzir ");
             SQL.Append("FROM Inss ");
-            SQL.Append("WHERE Faixa = @Faixa");
+            SQL.Append("WHERE Faixa = @Faixa ");
+            SQL.Append("AND Competencia = @Competencia");
 
             try
             {
                 Crud.LimparParametro();
                 Crud.AdicionarParamentro("Faixa", faixa);
+                Crud.AdicionarParamentro("Competencia", dtCompetencia);
                 decimal valParcelaDeduzir = Math.Round(decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString()), 2);
                 return valParcelaDeduzir;
             }

@@ -1,14 +1,11 @@
 ﻿using BancoDados;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Negocio.IRRF
 {
-   public static class ListarUtimaCompetencia
+    public static class ListarUtimaCompetencia
     {
         static CRUD Crud;
         static StringBuilder SQL = null;

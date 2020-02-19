@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculos\CalculoEnquadramentoFaixa.cs" />
     <Compile Include="Calculos\CalculoInssParcelaDeduzir.cs" />
     <Compile Include="Calculos\CalculoInssProgressao.cs" />
     <Compile Include="Calculos\CalculoIrrf.cs" />
