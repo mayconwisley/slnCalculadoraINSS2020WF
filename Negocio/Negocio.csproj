@@ -63,6 +63,7 @@
     <Compile Include="INSS\ListarPorcentagemFaixa.cs" />
     <Compile Include="INSS\ListarTeto.cs" />
     <Compile Include="INSS\ListarTetoFaixaFaixa.cs" />
+    <Compile Include="INSS\ListarUltimaFaixa.cs" />
     <Compile Include="INSS\ListarUtimaCompetencia.cs" />
     <Compile Include="INSS\ListaUltimaFaixaTeto.cs" />
     <Compile Include="IRRF\Alterar.cs" />

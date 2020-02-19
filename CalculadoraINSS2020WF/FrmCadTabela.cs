@@ -19,7 +19,7 @@ namespace CalculadoraINSS2020WF
         #endregion
 
         #region Variaveis e Constantes
-        int inssId = 0, irrfId = 0, salMinId = 0, depenId = 0;
+        int inssId = 0, irrfId = 0, salMinId = 0, depenId = 0, numFaixa = 0;
 
         DateTime dtCompetencia;
         #endregion
@@ -44,6 +44,7 @@ namespace CalculadoraINSS2020WF
             {
                 dtCompetencia = DateTime.Parse(MktCompInss.Text.Trim());
                 DgvInss.DataSource = Negocio.INSS.ListaINSSCompetencia.Consulta(dtCompetencia);
+                ListaFaixa();
             }
             catch (Exception ex)
             {
@@ -108,8 +109,8 @@ namespace CalculadoraINSS2020WF
                         MessageBox.Show("Opção não habilitada.");
                         break;
                 }
-                ListarInss();
                 Formulario.Limpar.Campos(PnlInss);
+                ListarInss();
                 BtnGravarInss.Enabled = true;
                 BtnAlterarInss.Enabled = false;
                 BtnExcluirInss.Enabled = false;
@@ -287,6 +288,20 @@ namespace CalculadoraINSS2020WF
             }
         }
 
+        private void ListaFaixa()
+        {
+            try
+            {
+                numFaixa = Negocio.INSS.ListarUltimaFaixa.UltimaFaixa(dtCompetencia);
+                TxtFaixaInss.Text = (numFaixa + 1).ToString();
+                TxtTetoFaixaInss.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         #endregion
 
         #region Padrao
@@ -304,7 +319,7 @@ namespace CalculadoraINSS2020WF
 
         private void TxtSalario_Enter(object sender, EventArgs e)
         {
-            if (TxtSalario.Text == "0,00")
+            if (TxtSalario.Text == "0" || TxtSalario.Text == "0,00")
             {
                 TxtSalario.Text = "";
             }
@@ -324,7 +339,7 @@ namespace CalculadoraINSS2020WF
 
         private void TxtFaixaInss_Enter(object sender, EventArgs e)
         {
-            if (TxtFaixaInss.Text == "0")
+            if (TxtFaixaInss.Text == "0" || TxtFaixaInss.Text == "0,00")
             {
                 TxtFaixaInss.Text = "";
             }
@@ -344,7 +359,7 @@ namespace CalculadoraINSS2020WF
 
         private void TxtTetoFaixaInss_Enter(object sender, EventArgs e)
         {
-            if (TxtTetoFaixaInss.Text == "0,00")
+            if (TxtTetoFaixaInss.Text == "0" || TxtTetoFaixaInss.Text == "0,00")
             {
                 TxtTetoFaixaInss.Text = "";
             }
@@ -364,7 +379,7 @@ namespace CalculadoraINSS2020WF
 
         private void TxtPorcInss_Enter(object sender, EventArgs e)
         {
-            if (TxtPorcInss.Text == "0,00")
+            if (TxtPorcInss.Text == "0" || TxtPorcInss.Text == "0,00")
             {
                 TxtPorcInss.Text = "";
             }
@@ -384,7 +399,7 @@ namespace CalculadoraINSS2020WF
 
         private void TxtLimiteIrrf_Enter(object sender, EventArgs e)
         {
-            if (TxtLimiteIrrf.Text == "0,00")
+            if (TxtLimiteIrrf.Text == "0" || TxtLimiteIrrf.Text == "0,00")
             {
                 TxtLimiteIrrf.Text = "";
             }
@@ -404,7 +419,7 @@ namespace CalculadoraINSS2020WF
 
         private void TxtPorcIrrf_Enter(object sender, EventArgs e)
         {
-            if (TxtPorcIrrf.Text == "0,00")
+            if (TxtPorcIrrf.Text == "0" || TxtPorcIrrf.Text == "0,00")
             {
                 TxtPorcIrrf.Text = "";
             }
@@ -424,7 +439,7 @@ namespace CalculadoraINSS2020WF
 
         private void TxtDescIrrf_Enter(object sender, EventArgs e)
         {
-            if (TxtDescIrrf.Text == "0,00")
+            if (TxtDescIrrf.Text == "0" || TxtDescIrrf.Text == "0,00")
             {
                 TxtDescIrrf.Text = "";
             }
@@ -622,6 +637,12 @@ namespace CalculadoraINSS2020WF
             }
         }
 
+        private void MktCompInss_Leave(object sender, EventArgs e)
+        {
+            dtCompetencia = DateTime.Parse(MktCompInss.Text.Trim());
+            ListaFaixa();
+        }
+
         private void FrmCadTabela_KeyPress(object sender, KeyPressEventArgs e)
         {
             //***** Ao pressionar Enter, muda de TextBox SEM O SOM*****//
@@ -641,7 +662,7 @@ namespace CalculadoraINSS2020WF
 
         private void TxtValorDep_Enter(object sender, EventArgs e)
         {
-            if (TxtValorDep.Text == "0,00")
+            if (TxtValorDep.Text == "0" || TxtValorDep.Text == "0,00")
             {
                 TxtValorDep.Text = "";
             }
