@@ -243,7 +243,7 @@ namespace CalculadoraINSS2020WF
         {
             try
             {
-                MktCompInss.Text = Negocio.INSS.ListarUtimaCompetencia.Competencia().ToString("MM/yyyy");
+                MktCompInss.Text = Negocio.INSS.ListarUltimaCompetencia.Competencia().ToString("MM/yyyy");
                 ListarInss();
             }
             catch (Exception ex)
@@ -255,7 +255,7 @@ namespace CalculadoraINSS2020WF
         {
             try
             {
-                MktCompIrrf.Text = Negocio.IRRF.ListarUtimaCompetencia.Competencia().ToString("MM/yyyy");
+                MktCompIrrf.Text = Negocio.IRRF.ListarUltimaCompetencia.Competencia().ToString("MM/yyyy");
                 ListarIrrf();
             }
             catch (Exception ex)
@@ -267,7 +267,7 @@ namespace CalculadoraINSS2020WF
         {
             try
             {
-                MktCompDep.Text = Negocio.Dependente.ListarUtimaCompetencia.Competencia().ToString("MM/yyyy");
+                MktCompDep.Text = Negocio.Dependente.ListarUltimaCompetencia.Competencia().ToString("MM/yyyy");
                 ListarDependente();
             }
             catch (Exception ex)
@@ -279,7 +279,7 @@ namespace CalculadoraINSS2020WF
         {
             try
             {
-                MktCompSalMin.Text = Negocio.SalMin.ListarUtimaCompetencia.Competencia().ToString("MM/yyyy");
+                MktCompSalMin.Text = Negocio.SalMin.ListarUltimaCompetencia.Competencia().ToString("MM/yyyy");
                 ListarSalMin();
             }
             catch (Exception ex)

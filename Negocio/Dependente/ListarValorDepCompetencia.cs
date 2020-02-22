@@ -22,8 +22,8 @@ namespace Negocio.Dependente
             {
                 Crud.LimparParametro();
                 Crud.AdicionarParamentro("Competencia", competencia);
-                decimal valDepe = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
-                return valDepe;
+                decimal valDep = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
+                return valDep;
             }
             catch (Exception ex)
             {

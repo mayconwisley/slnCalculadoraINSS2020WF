@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Negocio.IRRF
 {
-    public static class ListaParceDeduzirIrrf
+    public static class ListaDescontoIrrf
     {
         static CRUD Crud;
         static StringBuilder SQL = null;

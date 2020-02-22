@@ -3,7 +3,7 @@ namespace Negocio.Calculos
 {
     public static class CalculoParcelaDeduzir
     {
-        /*Selecionar a faixa anterior*/
+        /*Selecionar a faixa anterior e fazer o calculo da parcela a deduzir*/
         public static decimal CalcParcDeduzir(DateTime dtCompetencia, int valFaixa, decimal decPorcentagem)
         {
             try

@@ -20,7 +20,7 @@ namespace Negocio.Calculos
             decimal valContribuicao = Math.Round(valBase * (valPercentualFaixa / 100) - valParcelaDeduzi, 2);
             return valContribuicao;
         }
-
+        /*Popular a grid com o caldulo*/
         public static DataTable ValorContribuicaoFaixaGrid(DateTime dtCompetencia, decimal valBase, int faixa)
         {
             decimal valParcelaDeduzi = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(dtCompetencia,faixa), 2);

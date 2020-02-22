@@ -6,7 +6,7 @@ namespace Negocio.Calculos
     public static class CalculoInssProgressao
     {
 
-        /*Calculo do INSS em forma de Progessão*/
+        /*Calculo do INSS em forma de Progressão*/
         public static DataTable CalculoProgressao(DateTime dtCompetencia, decimal valBase)
         {
             decimal valPorcFaixa = 0, numFaixa = 0, valFaixaTeto = 0, valDesconto = 0, valBaseBkp = 0, valFaixaTeto1 = 0;

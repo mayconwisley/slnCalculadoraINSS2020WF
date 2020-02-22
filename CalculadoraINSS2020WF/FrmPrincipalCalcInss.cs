@@ -34,6 +34,7 @@ namespace CalculadoraINSS2020WF
 
                 decimal valSalarioLiquido = Math.Round(Negocio.Calculos.CalculoSalarioLiquido.SalarioLiquido(valBase, valDescInss, valDescIrrf), 2);
 
+
                 DgvCalcProgre.DataSource = Negocio.Calculos.CalculoInssProgressao.CalculoProgressao(dtCompInss, valBase);
 
                 foreach (DataGridViewRow item in DgvCalcProgre.Rows)
@@ -41,12 +42,16 @@ namespace CalculadoraINSS2020WF
                     valDescProg += decimal.Parse(item.Cells["DescontoProgr"].Value.ToString());
                 }
 
+                decimal valSalarioLiquido1 = Math.Round(Negocio.Calculos.CalculoSalarioLiquido.SalarioLiquido(valBase, valDescProg, valDescIrrf), 2);
+
                 DgvListParcDeduzir.DataSource = Negocio.Calculos.CalculoInssParcelaDeduzir.ValorContribuicaoFaixaGrid(dtCompInss, valBase, numFaixa);
 
-                LblInfoCalcProgr.Text = "Desc. INSS Progressiva: " + valDescProg.ToString("#,##0.00") +
+                LblInfoCalcProgr.Text = "Desc. INSS Progressivo: " + valDescProg.ToString("#,##0.00") +
                                         "\nDesc. INSS Parc. Deduzir: " + valDescInss.ToString("#,##0.00") +
                                         "\nDesconto IRRF: " + valDescIrrf.ToString("#,##0.00") +
-                                        "\nSalário Líquido: " + valSalarioLiquido.ToString("#,##0.00");
+                                        "\nSalário Líquido - Progressivo: " + valSalarioLiquido1.ToString("#,##0.00") +
+                                        "\nSalário Líquido - Parc. Deduzir: " + valSalarioLiquido.ToString("#,##0.00");
+
             }
             catch (Exception ex)
             {
@@ -58,10 +63,10 @@ namespace CalculadoraINSS2020WF
         {
             try
             {
-                dtCompInss = Negocio.INSS.ListarUtimaCompetencia.Competencia();
-                dtCompIrrf = Negocio.IRRF.ListarUtimaCompetencia.Competencia();
-                dtSalMin = Negocio.SalMin.ListarUtimaCompetencia.Competencia();
-                dtDependente = Negocio.Dependente.ListarUtimaCompetencia.Competencia();
+                dtCompInss = Negocio.INSS.ListarUltimaCompetencia.Competencia();
+                dtCompIrrf = Negocio.IRRF.ListarUltimaCompetencia.Competencia();
+                dtSalMin = Negocio.SalMin.ListarUltimaCompetencia.Competencia();
+                dtDependente = Negocio.Dependente.ListarUltimaCompetencia.Competencia();
 
 
                 DgvTbInss.DataSource = Negocio.INSS.ListaINSSCompetencia.Consulta(dtCompInss);

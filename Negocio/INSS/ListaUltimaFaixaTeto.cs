@@ -9,7 +9,7 @@ namespace Negocio.INSS
     {
         static CRUD Crud;
         static StringBuilder SQL = null;
-
+        /*Listar ultima faixa onde o é o teto do INSS*/
         public static decimal FaixaTeto(DateTime dtComptencia)
         {
             Crud = new CRUD();

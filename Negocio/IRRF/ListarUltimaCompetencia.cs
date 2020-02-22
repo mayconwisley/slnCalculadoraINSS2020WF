@@ -3,9 +3,9 @@ using System;
 using System.Data;
 using System.Text;
 
-namespace Negocio.SalMin
+namespace Negocio.IRRF
 {
-    public static class ListarUtimaCompetencia
+    public static class ListarUltimaCompetencia
     {
         static CRUD Crud;
         static StringBuilder SQL = null;
@@ -15,7 +15,7 @@ namespace Negocio.SalMin
             Crud = new CRUD();
             SQL = new StringBuilder();
             SQL.Append("SELECT Competencia ");
-            SQL.Append("FROM SalMin ");
+            SQL.Append("FROM Irrf ");
             SQL.Append("GROUP BY Competencia ");
             SQL.Append("ORDER BY Competencia DESC");
 

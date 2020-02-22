@@ -4,10 +4,11 @@ namespace Negocio.Calculos
 {
     public static class CalculoIrrf
     {
+       /*Calculo do desconto do imposto de renda*/
         public static decimal DescontoIrrf(DateTime dtCompetencia, int dep, decimal valBase, decimal valInss, decimal valDep)
         {
-            decimal valAliquita = Negocio.IRRF.ListaPorceIrrfValBase.PorcemtagemIRRF(dtCompetencia,valBase);
-            decimal valDesconto = Negocio.IRRF.ListaParceDeduzirIrrf.DescontoIRRF(dtCompetencia, valBase);
+            decimal valAliquita = Negocio.IRRF.ListaPorceIrrfValBase.PorcentagemIRRF(dtCompetencia,valBase);
+            decimal valDesconto = Negocio.IRRF.ListaDescontoIrrf.DescontoIRRF(dtCompetencia, valBase);
 
             decimal valBaseIrrf = 0, valDescontoIrrf = 0;
 

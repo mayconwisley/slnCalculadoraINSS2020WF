@@ -12,7 +12,7 @@ namespace Negocio.INSS
     {
         static CRUD Crud;
         static StringBuilder SQL = null;
-
+        /*Listar sempre a ultima faixa mesmo que a competencia seja menor que a cadastrada na tabela*/
         public static int UltimaFaixa(DateTime dtCompetencia)
         {
             Crud = new CRUD();

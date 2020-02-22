@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Negocio.INSS
 {
-    public static class ListarUtimaCompetencia
+    public static class ListarUltimaCompetencia
     {
         static CRUD Crud;
         static StringBuilder SQL = null;

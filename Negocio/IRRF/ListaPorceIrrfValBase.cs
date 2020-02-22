@@ -10,7 +10,7 @@ namespace Negocio.IRRF
         static CRUD Crud;
         static StringBuilder SQL = null;
 
-        public static decimal PorcemtagemIRRF(DateTime dtCompetencia, decimal valBase)
+        public static decimal PorcentagemIRRF(DateTime dtCompetencia, decimal valBase)
         {
             Crud = new CRUD();
             SQL = new StringBuilder();
