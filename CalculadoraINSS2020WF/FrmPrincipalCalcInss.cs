@@ -46,10 +46,10 @@ namespace CalculadoraINSS2020WF
 
                 DgvListParcDeduzir.DataSource = Negocio.Calculos.CalculoInssParcelaDeduzir.ValorContribuicaoFaixaGrid(dtCompInss, valBase, numFaixa);
 
-                LblInfoCalcProgr.Text = "Desc. INSS Progressivo: " + valDescProg.ToString("#,##0.00") +
-                                        "\nDesc. INSS Parc. Deduzir: " + valDescInss.ToString("#,##0.00") +
-                                        "\nDesconto IRRF: " + valDescIrrf.ToString("#,##0.00") +
-                                        "\nSalário Líquido - Progressivo: " + valSalarioLiquido1.ToString("#,##0.00") +
+                LblInfoCalcProgr.Text = "Desc. INSS Progressivo.........: " + valDescProg.ToString("#,##0.00") +
+                                        "\nDesc. INSS Parc. Deduzir.......: " + valDescInss.ToString("#,##0.00") +
+                                        "\nDesconto IRRF..................: " + valDescIrrf.ToString("#,##0.00") +
+                                        "\nSalário Líquido - Progressivo..: " + valSalarioLiquido1.ToString("#,##0.00") +
                                         "\nSalário Líquido - Parc. Deduzir: " + valSalarioLiquido.ToString("#,##0.00");
 
             }
@@ -75,8 +75,8 @@ namespace CalculadoraINSS2020WF
                 valSalarioMinimo = Negocio.SalMin.ListarSalMinCompIndividual.SalarioCompetencia(dtSalMin);
                 valValorDependente = Negocio.Dependente.ListarValorDepCompetencia.SalarioCompetencia(dtDependente);
 
-                LblInfTabelas.Text = "Salário Mínimo: " + valSalarioMinimo.ToString("#,##0.00") +
-                                     "\nValor Dependente: " + valValorDependente.ToString("#,##0.00");
+                LblInfTabelas.Text = "Valor Dependente: " + valValorDependente.ToString("#,##0.00") +
+                                     "\nSalário Mínimo..: " + valSalarioMinimo.ToString("#,##0.00");
 
             }
             catch (Exception ex)
@@ -84,8 +84,6 @@ namespace CalculadoraINSS2020WF
                 MessageBox.Show(ex.Message);
             }
         }
-
-
 
         private void LkLblCadTabela_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

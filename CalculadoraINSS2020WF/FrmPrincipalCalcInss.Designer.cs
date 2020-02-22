@@ -77,12 +77,12 @@
             this.TxtNumDep = new System.Windows.Forms.TextBox();
             this.LkLblAtualizarTabelas = new System.Windows.Forms.LinkLabel();
             this.DgvListParcDeduzir = new System.Windows.Forms.DataGridView();
-            this.LblInfoCalcProgre1 = new System.Windows.Forms.Label();
             this.FaixaParcDed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValorFaixaParcDed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PorcParcDed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ParcelaDeduzir = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DescontoParcDed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LblInfoCalcProgre1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCalcProgre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvTbInss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvTbIrrf)).BeginInit();
@@ -121,7 +121,7 @@
             this.BtnCalcular.Location = new System.Drawing.Point(313, 32);
             this.BtnCalcular.Name = "BtnCalcular";
             this.BtnCalcular.Size = new System.Drawing.Size(170, 36);
-            this.BtnCalcular.TabIndex = 2;
+            this.BtnCalcular.TabIndex = 3;
             this.BtnCalcular.Text = "Calcular";
             this.BtnCalcular.UseVisualStyleBackColor = true;
             this.BtnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
@@ -144,7 +144,7 @@
             this.DgvCalcProgre.ReadOnly = true;
             this.DgvCalcProgre.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvCalcProgre.Size = new System.Drawing.Size(478, 142);
-            this.DgvCalcProgre.TabIndex = 3;
+            this.DgvCalcProgre.TabIndex = 4;
             // 
             // FaixaProgr
             // 
@@ -212,7 +212,7 @@
             this.DgvTbInss.ReadOnly = true;
             this.DgvTbInss.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvTbInss.Size = new System.Drawing.Size(448, 205);
-            this.DgvTbInss.TabIndex = 4;
+            this.DgvTbInss.TabIndex = 6;
             // 
             // IdInss
             // 
@@ -300,7 +300,7 @@
             this.DgvTbIrrf.ReadOnly = true;
             this.DgvTbIrrf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvTbIrrf.Size = new System.Drawing.Size(448, 205);
-            this.DgvTbIrrf.TabIndex = 4;
+            this.DgvTbIrrf.TabIndex = 7;
             // 
             // IdIrrf
             // 
@@ -360,10 +360,10 @@
             // LblInfoCalcProgr
             // 
             this.LblInfoCalcProgr.AutoSize = true;
-            this.LblInfoCalcProgr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfoCalcProgr.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblInfoCalcProgr.Location = new System.Drawing.Point(12, 410);
             this.LblInfoCalcProgr.Name = "LblInfoCalcProgr";
-            this.LblInfoCalcProgr.Size = new System.Drawing.Size(21, 20);
+            this.LblInfoCalcProgr.Size = new System.Drawing.Size(32, 17);
             this.LblInfoCalcProgr.TabIndex = 7;
             this.LblInfoCalcProgr.Text = "...";
             // 
@@ -414,10 +414,10 @@
             // LblInfTabelas
             // 
             this.LblInfTabelas.AutoSize = true;
-            this.LblInfTabelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfTabelas.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblInfTabelas.Location = new System.Drawing.Point(489, 454);
             this.LblInfTabelas.Name = "LblInfTabelas";
-            this.LblInfTabelas.Size = new System.Drawing.Size(21, 20);
+            this.LblInfTabelas.Size = new System.Drawing.Size(32, 17);
             this.LblInfTabelas.TabIndex = 12;
             this.LblInfTabelas.Text = "...";
             // 
@@ -445,7 +445,7 @@
             this.TxtNumDep.Location = new System.Drawing.Point(244, 71);
             this.TxtNumDep.Name = "TxtNumDep";
             this.TxtNumDep.Size = new System.Drawing.Size(63, 30);
-            this.TxtNumDep.TabIndex = 15;
+            this.TxtNumDep.TabIndex = 2;
             this.TxtNumDep.Text = "0";
             this.TxtNumDep.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtNumDep.TextChanged += new System.EventHandler(this.TxtNumDep_TextChanged);
@@ -459,7 +459,7 @@
             this.LkLblAtualizarTabelas.Location = new System.Drawing.Point(756, 457);
             this.LkLblAtualizarTabelas.Name = "LkLblAtualizarTabelas";
             this.LkLblAtualizarTabelas.Size = new System.Drawing.Size(186, 17);
-            this.LkLblAtualizarTabelas.TabIndex = 16;
+            this.LkLblAtualizarTabelas.TabIndex = 9;
             this.LkLblAtualizarTabelas.TabStop = true;
             this.LkLblAtualizarTabelas.Text = "Atualizar Grid\'s INSS e IRRF";
             this.LkLblAtualizarTabelas.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkLblAtualizarTabelas_LinkClicked);
@@ -483,17 +483,7 @@
             this.DgvListParcDeduzir.ReadOnly = true;
             this.DgvListParcDeduzir.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvListParcDeduzir.Size = new System.Drawing.Size(478, 100);
-            this.DgvListParcDeduzir.TabIndex = 17;
-            // 
-            // LblInfoCalcProgre1
-            // 
-            this.LblInfoCalcProgre1.AutoSize = true;
-            this.LblInfoCalcProgre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblInfoCalcProgre1.Location = new System.Drawing.Point(11, 284);
-            this.LblInfoCalcProgre1.Name = "LblInfoCalcProgre1";
-            this.LblInfoCalcProgre1.Size = new System.Drawing.Size(177, 20);
-            this.LblInfoCalcProgre1.TabIndex = 18;
-            this.LblInfoCalcProgre1.Text = "Calculo Parcela Deduzir";
+            this.DgvListParcDeduzir.TabIndex = 5;
             // 
             // FaixaParcDed
             // 
@@ -545,6 +535,16 @@
             this.DescontoParcDed.Name = "DescontoParcDed";
             this.DescontoParcDed.ReadOnly = true;
             this.DescontoParcDed.Width = 120;
+            // 
+            // LblInfoCalcProgre1
+            // 
+            this.LblInfoCalcProgre1.AutoSize = true;
+            this.LblInfoCalcProgre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfoCalcProgre1.Location = new System.Drawing.Point(11, 284);
+            this.LblInfoCalcProgre1.Name = "LblInfoCalcProgre1";
+            this.LblInfoCalcProgre1.Size = new System.Drawing.Size(177, 20);
+            this.LblInfoCalcProgre1.TabIndex = 18;
+            this.LblInfoCalcProgre1.Text = "Calculo Parcela Deduzir";
             // 
             // FrmPrincipalCalcInss
             // 
