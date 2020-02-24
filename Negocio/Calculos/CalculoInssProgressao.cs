@@ -32,8 +32,8 @@ namespace Negocio.Calculos
                         valFaixaTeto = valBase;
                     }
 
-                    valFaixaTeto1 = Math.Round(valFaixaTeto - valFaixaTeto1, 2);
-                    valDesconto = Math.Round(valFaixaTeto1 * (valPorcFaixa / 100), 2);
+                    valFaixaTeto1 = Math.Round(valFaixaTeto - valFaixaTeto1, 2, MidpointRounding.AwayFromZero);
+                    valDesconto = Math.Round(valFaixaTeto1 * (valPorcFaixa / 100), 2, MidpointRounding.AwayFromZero);
 
                     dtCalcProgressao.Rows.Add(i, valFaixaTeto1.ToString("#,##0.00"), valPorcFaixa.ToString("#,##0.00"), valDesconto.ToString("#,##0.00"));
                 }

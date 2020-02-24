@@ -17,13 +17,13 @@ namespace Negocio.Calculos
                 else
                 {
                     valDiferenca = decPorcentagem -
-                                   Math.Round(Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(dtCompetencia, valFaixa - 1), 2);
+                                   Math.Round(Negocio.INSS.ListarPorcentagemFaixa.Porcentagem(dtCompetencia, valFaixa - 1), 2, MidpointRounding.AwayFromZero);
                 }
 
-                valFaixaTeto = Math.Round(Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(dtCompetencia, valFaixa - 1), 2);
-                valParceDeduzir = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(dtCompetencia, valFaixa - 1), 2);
+                valFaixaTeto = Math.Round(Negocio.INSS.ListarTetoFaixaFaixa.TetoFaixa(dtCompetencia, valFaixa - 1), 2, MidpointRounding.AwayFromZero);
+                valParceDeduzir = Math.Round(Negocio.INSS.ListarParcelaFaixa.ParcelaDeduzir(dtCompetencia, valFaixa - 1), 2, MidpointRounding.AwayFromZero);
 
-                valCalcParcDeduzir = Math.Round(valFaixaTeto * (valDiferenca / 100) + valParceDeduzir, 5);
+                valCalcParcDeduzir = Math.Round(valFaixaTeto * (valDiferenca / 100) + valParceDeduzir, 2, MidpointRounding.AwayFromZero);
 
                 return valCalcParcDeduzir;
             }
