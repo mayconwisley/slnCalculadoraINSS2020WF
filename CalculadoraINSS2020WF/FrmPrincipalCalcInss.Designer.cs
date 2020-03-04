@@ -83,6 +83,7 @@
             this.ParcelaDeduzir = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DescontoParcDed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LblInfoCalcProgre1 = new System.Windows.Forms.Label();
+            this.CbMostraCalcParcDeduzir = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCalcProgre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvTbInss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvTbIrrf)).BeginInit();
@@ -484,6 +485,7 @@
             this.DgvListParcDeduzir.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvListParcDeduzir.Size = new System.Drawing.Size(478, 100);
             this.DgvListParcDeduzir.TabIndex = 5;
+            this.DgvListParcDeduzir.Visible = false;
             // 
             // FaixaParcDed
             // 
@@ -545,6 +547,19 @@
             this.LblInfoCalcProgre1.Size = new System.Drawing.Size(177, 20);
             this.LblInfoCalcProgre1.TabIndex = 18;
             this.LblInfoCalcProgre1.Text = "Calculo Parcela Deduzir";
+            this.LblInfoCalcProgre1.Visible = false;
+            // 
+            // CbMostraCalcParcDeduzir
+            // 
+            this.CbMostraCalcParcDeduzir.AutoSize = true;
+            this.CbMostraCalcParcDeduzir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CbMostraCalcParcDeduzir.Location = new System.Drawing.Point(226, 104);
+            this.CbMostraCalcParcDeduzir.Name = "CbMostraCalcParcDeduzir";
+            this.CbMostraCalcParcDeduzir.Size = new System.Drawing.Size(259, 29);
+            this.CbMostraCalcParcDeduzir.TabIndex = 19;
+            this.CbMostraCalcParcDeduzir.Text = "Mostrar Calc. Parc. Dedizir";
+            this.CbMostraCalcParcDeduzir.UseVisualStyleBackColor = true;
+            this.CbMostraCalcParcDeduzir.CheckedChanged += new System.EventHandler(this.CbMostraCalcParcDeduzir_CheckedChanged);
             // 
             // FrmPrincipalCalcInss
             // 
@@ -552,6 +567,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(954, 535);
+            this.Controls.Add(this.CbMostraCalcParcDeduzir);
             this.Controls.Add(this.LblInfoCalcProgre1);
             this.Controls.Add(this.DgvListParcDeduzir);
             this.Controls.Add(this.LkLblAtualizarTabelas);
@@ -631,6 +647,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PorcParcDed;
         private System.Windows.Forms.DataGridViewTextBoxColumn ParcelaDeduzir;
         private System.Windows.Forms.DataGridViewTextBoxColumn DescontoParcDed;
+        private System.Windows.Forms.CheckBox CbMostraCalcParcDeduzir;
     }
 }
 
