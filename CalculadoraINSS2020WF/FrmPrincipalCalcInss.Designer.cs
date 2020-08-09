@@ -592,7 +592,6 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FrmPrincipalCalcInss";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora INSS 2020";

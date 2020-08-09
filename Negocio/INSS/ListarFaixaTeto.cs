@@ -26,12 +26,14 @@ namespace Negocio.INSS
                 Crud.LimparParametro();
                 Crud.AdicionarParamentro("valBase", valBase);
                 Crud.AdicionarParamentro("Competencia", dtCompetencia);
-                int numFaixa = int.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
+                int numFaixa = (Crud.Executar(CommandType.Text, SQL.ToString()) != null) ?
+                                int.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString()) :
+                                int.Parse(Negocio.INSS.ListarUltimaFaixaTeto.FaixaTeto(dtCompetencia).ToString());
                 return numFaixa;
             }
             catch (Exception ex)
             {
-                return Negocio.INSS.ListaUltimaFaixaTeto.FaixaTeto(dtCompetencia);
+
                 throw new Exception(ex.Message);
             }
         }

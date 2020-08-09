@@ -25,12 +25,15 @@ namespace Negocio.INSS
                 Crud.LimparParametro();
                 Crud.AdicionarParamentro("Faixa", faixa);
                 Crud.AdicionarParamentro("Competencia", dtCompetencia);
-                decimal valTetoFaixa = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
+
+                decimal valTetoFaixa = (Crud.Executar(CommandType.Text, SQL.ToString()) != null) ?
+                        (valTetoFaixa = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString())) :
+                        0;
+
                 return valTetoFaixa;
             }
             catch (Exception ex)
             {
-                return 0;
                 throw new Exception(ex.Message);
             }
         }

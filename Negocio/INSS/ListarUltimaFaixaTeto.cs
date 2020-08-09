@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Negocio.INSS
 {
-    public static class ListaUltimaFaixaTeto
+    public static class ListarUltimaFaixaTeto
     {
         static CRUD Crud;
         static StringBuilder SQL = null;

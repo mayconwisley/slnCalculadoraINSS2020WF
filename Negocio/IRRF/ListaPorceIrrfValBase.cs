@@ -26,7 +26,9 @@ namespace Negocio.IRRF
                 Crud.LimparParametro();
                 Crud.AdicionarParamentro("valBase", valBase);
                 Crud.AdicionarParamentro("Competencia", dtCompetencia);
-                decimal numPorcemtagem = decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString());
+                decimal numPorcemtagem = (Crud.Executar(CommandType.Text, SQL.ToString()) != null) ?
+                                          decimal.Parse(Crud.Executar(CommandType.Text, SQL.ToString()).ToString()) :
+                                          0;
                 return numPorcemtagem;
             }
             catch (Exception ex)

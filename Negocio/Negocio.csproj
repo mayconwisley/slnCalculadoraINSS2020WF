@@ -63,7 +63,7 @@
     <Compile Include="INSS\ListarTetoFaixaFaixa.cs" />
     <Compile Include="INSS\ListarUltimaFaixa.cs" />
     <Compile Include="INSS\ListarUltimaCompetencia.cs" />
-    <Compile Include="INSS\ListaUltimaFaixaTeto.cs" />
+    <Compile Include="INSS\ListarUltimaFaixaTeto.cs" />
     <Compile Include="IRRF\Alterar.cs" />
     <Compile Include="IRRF\Excluir.cs" />
     <Compile Include="IRRF\Gravar.cs" />
